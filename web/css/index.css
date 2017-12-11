@@ -1,0 +1,302 @@
+
+body{
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+#head{
+    position: fixed;
+    display: block;
+    top:0;
+    left:0;
+    width:100%;
+    height:94px;
+    background-color: rgba(13, 13, 13, 0.6);
+    overflow: hidden;
+    z-index: 1000;
+}
+.nav{
+    width:60%;
+    height:94px;
+    margin:0 auto;
+    padding: 0 15px;
+}
+.photo{
+    width: 28%;
+    height:94px;
+    float: left;
+}
+
+.photo img{
+    width:52px;
+    height:52px;
+    margin: 17px 0;
+    border: 4px solid white;
+}
+
+.navbar{
+    width: 52%;
+    height:94px;
+    float: left;
+}
+.navbar li{
+    display: block;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 32px 15px;
+}
+
+.navbar li a {
+    color: #ffffff !important;
+}
+
+.contact{
+    width: 20%;
+    height:94px;
+    float: left;
+}
+
+.contact i{
+    color: #ffffff !important;
+    font-size: 22px;
+    padding: 36px 15px;
+}
+
+#slideBox{
+    background-color: #24242a;
+    position: relative;
+    overflow: hidden;
+    /*padding-top:94px;*/
+    z-index: -1;
+}
+#slideBox ul{
+    position: absolute;
+    /*margin-top:94px;*/
+    left:0;
+    top:0;
+    overflow: hidden;
+}
+
+#slideBox ul li{
+    list-style: none;
+}
+#slideBox ul li img{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+#welcome{
+    background-color: #24242a;
+    padding: 60px 0;
+    text-align: center;
+}
+#welcome .container{
+    width:66%;
+    margin:0 auto;
+}
+#welcome h2{
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+#welcome p{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+#welcome .solid{
+    width:80px;
+    border:2px solid #ffffff;
+    margin:40px auto;
+}
+
+#welcome img{
+    width: 175px;
+    height: 175px;
+    margin: 40px auto;
+    border: 4px solid #ffffff;
+    visibility: visible;
+    animation: fadeinUp 2s 0.3s;
+}
+
+@keyframes fadeinUp {
+    from{opacity: 0;transform: translate3d(0,100%,0)}
+    to{opacity: 1;transform: none}
+}
+
+#notes{
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+    text-align: center;
+}
+#notes .container{
+    width:66%;
+    margin:0 auto;
+    overflow: hidden;
+}
+#notes h2{
+    font-size: 36px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+#notes p{
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#notes .solid{
+    width:80px;
+    border:2px solid #0d0d0d;
+    margin:40px auto;
+}
+
+.share{
+    position: relative;
+    width:100%;
+    padding: 0 0.5%;
+}
+
+.shareBox{
+    /*display: none;*/
+}
+
+.mask{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background-color: #0d0d0d;
+    transition:all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.tip{
+    position: absolute;
+    top:50%;
+    width:100%;
+    margin:auto;
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(-50%);
+    transition:all 0.3s ease-in-out;
+    z-index: 20;
+}
+
+.tip h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff ;
+}
+
+.tip p{
+    font-size: 18px;
+    color: #ffffff !important;
+    margin-bottom: 0!important;
+}
+
+.share a{
+    display: block;
+    position: relative;
+    float: left;
+    width: 33%;
+    overflow: hidden;
+}
+
+.share img{
+    width:100%;
+    height: auto;
+}
+
+#words{
+    background: url("../img/words.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#words .container{
+    width:66%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+#words p{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#words h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#words h5{
+    color: #fff;
+    line-height: 36px;
+    font-size: 22px;
+    font-weight: 400;
+}
+#words .solid{
+    width:80px;
+    border:2px solid #ffffff;
+    margin:40px auto;
+}
+
+footer{
+    background: #24242a;
+    padding: 60px 0;
+    text-align: center;
+}
+
+footer h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 72px;
+    color: #fff;
+    letter-spacing: 0.16em;
+}
+
+footer ul{
+    width:70%;
+    margin: 40px auto;
+    overflow:hidden
+}
+footer li{
+    display:block;
+    width: 33%;
+    float: left;
+    color: #ffffff;
+}
+
+.container i{
+    font-size: 22px;
+    color: white;
+    padding-right: 10px;
+}
