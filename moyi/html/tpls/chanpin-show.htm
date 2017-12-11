@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/animate.min.css" />
+        <link rel="stylesheet" href="<!--{ $wset_ary['tpl_path'] }-->css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/bootsnav.css">
+	    <link href="<!--{ $wset_ary['tpl_path'] }-->css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/chanpin-show.css"/> 
+        <script src="<!--{ $wset_ary['tpl_path'] }-->js/wow.min.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/jquery-1.11.0.min.js"></script>		    
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/iconfont.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="<!--{ $wset_ary['tpl_path'] }-->js/bootsnav.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/chanpin-zhanshi.js"></script>
+	</head>
+	<body>		
+		<!--{include "head.htm"}-->
+		
+		<div class="container">
+			<!--产品展示-->
+			<div class="left1 col-xs-12 col-sm-12 col-md-9 col-lg-9">
+				<div class="content-left">
+					<!--{ffwbms ffa_art_value,ary_txt,'id='.$get_ary['id']}--><!--获得指定文章号的文章数据-->
+					<ul>
+						<li><img src="<!--{ $wset_ary['upload_path'] }--><!--{$ary_txt[timgary][0][furl]}-->" ></li>
+						<li><img src="<!--{ $wset_ary['upload_path'] }--><!--{$ary_txt[timgary][1][furl]}-->" ></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content-right col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<!--{ffwbms ffa_art_value,ary_txt,'id='.$get_ary['id']}--><!--获得指定文章号的文章数据-->
+				<!--{$time=substr($ary_txt[scdt],0,10)}-->				
+				<div class="content-right-text">
+		          	<p class="content-right-text-p1" style="font-size: 24px;"><!--{$ary_txt[atit]}--></p>
+		          	<p style="padding-bottom: 15px;color: rgb(165, 165, 165);"><!--{$ary_txt[stit]}--></p>
+		          	<p><!--{$ary_txt[atxt]}--></p>
+		          	<p class="online">在线预览<br></p>
+				</div>
+				<div class="content-right-item clearfix">
+					<h3>相关内容</h3>
+					<!--{ffwbms ffa_sort_list,vtemp,'pid=11|top=3'}--><!--获得当前页面语种的网站结构分类表--> 
+		    		<!---{ffwbms_see $vtemp}-->
+					<!--{$a=1}-->
+					<!--{loop $vtemp $ary}-->	
+					<p class="content-item-title">						
+						<a href="?tpl=<!--{$ary[spage]}-->&pid=<!--{$get_ary[pid]}-->&uid=<!--{$ary[id]}-->&sno=<!--{$get_ary[sno]}-->&list=<!--{$a}-->">
+						<!--{$ary[sname]}-->
+						</a>
+					</p>
+		    		<!--$ary[spage：返回分类要使用的模板文件名； $ary[sname]：返回分类名  -->
+		    		<!--{$a ++}-->
+					<!--{ /loop }-->					
+					<ul class="clearfix" style="list-style: none;padding-top: 17%;">
+		    			<!--{ffwbms ffa_art_astoplist,vte,'pid=11|top=12|ob=3'}-->
+			            <!--{loop $vte $ary}-->
+			            <!--{ffwbms ffa_art_value,arry,'id='.$ary[id]}-->
+			            <!---{ffwbms_see $arry[pid]}-->
+			            <!--{if length($vte)>0}-->
+			            
+						<li class="content-right-li col-xs-12 col-sm-12 col-md-12 col-lg-6" >
+							<a href="?tpl=chanpin-show&pid=<!--{$get_ary['pid']}-->&uid=<!--{$get_ary['uid']}-->&id=<!--{$ary['id']}-->&sno=<!--{$get_ary['sno']}-->&list=<!--{$get_ary['list']}-->" style="text-decoration: none;">
+								<div class="content-right-list  wow">
+								 	<div class="content-right-img">
+		    				        	<img src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][2][furl]}-->"/>
+		    				     	</div>
+		    					 	<div class="content-right-list-text">
+		    							<p ><!--{$ary[atit]}--></p>
+		    							<p style="font-size: 8px;"><!--{$ary[stit]}--></p>
+		    					 	</div>
+								</div>
+							</a>
+						</li>
+		                <!--{ /if }-->
+		                <!--{ /loop }-->	
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<!--页脚-->
+	    <!--{include "foot.htm"}-->
+	</body>
+</html>

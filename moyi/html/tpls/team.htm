@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/animate.min.css" />
+        <link rel="stylesheet" href="<!--{ $wset_ary['tpl_path'] }-->css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/bootsnav.css">
+	    <link href="<!--{ $wset_ary['tpl_path'] }-->css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/team.css"/> 
+        <script src="<!--{ $wset_ary['tpl_path'] }-->js/wow.min.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/jquery-1.11.0.min.js"></script>	    
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/iconfont.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="<!--{ $wset_ary['tpl_path'] }-->js/bootsnav.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/chanping.js"></script>	
+	</head>
+	<body>	
+		<!--{include "head.htm"}-->			
+		<!--成员-->
+		<div class="a"></div>
+		<div class="content">			
+			<ul class="content-list clearfix">
+				<!--{ffwbms ffa_art_pglist,vtemp,'pid=24|pg='.$get_ary["pg"].'|ps=9|ob=3'}-->
+				<!--{ffwbms ffa_art_astoplist,vte,'pid=24|ob=3'}--->
+	            <!--{loop $vtemp[0] $ary}-->
+	            <!--{ffwbms ffa_art_value,arry,'id='.$ary[id]}-->
+	            <!---{ffwbms_see $arry[pid]}-->
+	            <!--{if length($vtemp)>0}-->	            
+				<li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="content-li wow">
+						<a href="?tpl=member&pid=<!--{$get_ary['pid']}-->&uid=<!--{$get_ary['uid']}-->&id=<!--{$ary['id']}-->&sno=<!--{$get_ary['sno']}-->&list=<!--{$get_ary['list']}-->">
+							<div class="content-img">
+								<img src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][0][furl]}-->">
+							</div>
+							<div >
+								<div class="content-title">
+	                              	<p ><strong><!--{$ary[atit]}--></strong></p>
+	                              	<p ><!--{$ary[stit]}--></p>
+	                            </div>
+	                            <div class="content-text">
+	                            	<!--{$ary[abs]}-->
+	                            </div>
+							</div>
+						</a>
+					</div>
+				</li>
+                <!--{ /if }-->
+                <!--{ /loop }-->	
+			</ul>			
+			<!--手机团队界面-->
+			<div class="phone-team">	    		
+	    		<ul class="clearfix">
+	    			<!--{ffwbms ffa_art_pglist,vtemp,'pid=24|pg='.$get_ary["pg"].'|ps=9|ob=3'}-->
+	    			<!--{ffwbms ffa_art_astoplist,vte,'pid=24|ob=3'}-->
+		            <!--{loop $vtemp[0] $ary}-->
+		            <!--{ffwbms ffa_art_value,arry,'id='.$ary[id]}-->
+		            <!---{ffwbms_see $arry}-->
+		            <!--{if length($vtemp)>0}-->
+		            <!--{if $ary[id]%2==0}-->
+					<li class="clearfix">
+						<a href="?tpl=member&pid=<!--{$get_ary['pid']}-->&uid=<!--{$get_ary['uid']}-->&id=<!--{$ary['id']}-->&sno=<!--{$get_ary['sno']}-->&list=<!--{$get_ary['list']}-->">
+		    				<div class="phone-team-img col-xs-3 col-sm-3">
+		    					<img src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][0][furl]}-->">
+		    				</div>
+		    				<div class="phone-team-text col-xs-9 col-sm-9">
+		    					<p style=" font-size=16px;color: #000;"><strong style="color: #000000;"><!--{$ary[atit]}--></strong></p>
+	    						<p style="font-size: 10px;color: #898989;"><!--{$ary[stit]}--></p>
+	    						<p style="color: #898989;"><!--{$ary[abs]}--></p>
+		    				</div>
+	    				</a>
+	    			</li>
+	    			<!--{ /if }-->
+	    			 <!--{if $ary[id]%2!=0}-->
+	    			<li class="clearfix">
+	    				<a href="?tpl=member&pid=<!--{$get_ary['pid']}-->&uid=<!--{$get_ary['uid']}-->&id=<!--{$ary['id']}-->&sno=<!--{$get_ary['sno']}-->&list=<!--{$get_ary['list']}-->">
+		    				<div class="phone-team-text col-xs-9 col-sm-9">
+		    					<p style=" font-size=16px;color: #000;"><strong style="color: #000000;"><!--{$ary[atit]}--></strong></p>
+	    						<p style="font-size: 10px;color: #898989;"><!--{$ary[stit]}--></p>
+	    						<p style="color: #898989;"><!--{$ary[abs]}--></p>
+		    				</div>
+		    				<div class="phone-team-img col-xs-3 col-sm-3">
+		    					<img src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][0][furl]}-->">
+		    				</div>
+	    				</a>
+	    			</li>
+	    			<!--{ /if }-->
+	                <!--{ /if }-->
+	                <!--{ /loop }-->	                
+	    		</ul>
+	    	</div>
+		</div>
+	    <!--页码-->
+	    <!--{if $vtemp[0]!=null}-->
+		<div class="pagety-box">
+			<p>
+			    <!--{$pgg=$vtemp[1]}-->
+			    <!---{ffwbms_see $pgg }-->
+			        <!--{$vUrl=urlspace($get_ary['SCRIPT_NAME'].'?tpl='.$get_ary['tpl'].'&pid='.$get_ary['pid'].'&uid='.$get_ary['uid'].'&list='.$get_ary['list'].'&sno='.$get_ary['sno'])}-->
+			    <!--{if $pgg['current']!=1}-->
+			    <a href="<!--{$vUrl}-->&pg=1"><img src="<!--{ $wset_ary['tpl_path'] }-->images/pagel.png" alt=""></a>
+			    <!--{/if}-->
+			    <!--{$p=intval($vtemp[1][pages], 10)}-->
+			    <!--{$ff=1}-->
+			    <!--{ while $ff-1<$p }--> 
+			    <a href="<!--{$vUrl}-->&pg=<!--{$ff}-->" class="<!--{if $ff==$pgg[current]}-->cur<!--{/if}-->"><!--{$ff}--></a>
+			    <!--{$ff ++}-->
+			    <!--{ /while }-->
+			    <!--{if $pgg['next']!=0}-->
+			    <a href="<!--{$vUrl}-->&pg=<!--{$vtemp[1][pages]}-->"><img src="<!--{ $wset_ary['tpl_path'] }-->images/pager.png" alt=""></a>
+			    <!--{/if}-->
+			</p>
+		</div>
+		<!--{/if}-->	
+	    <!--{include "foot.htm"}-->
+	</body>
+</html>

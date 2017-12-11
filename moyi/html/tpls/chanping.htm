@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/animate.min.css" />
+        <link rel="stylesheet" href="<!--{ $wset_ary['tpl_path'] }-->css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/bootsnav.css">
+	    <link href="<!--{ $wset_ary['tpl_path'] }-->css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/chanping.css"/> 
+        <script src="<!--{ $wset_ary['tpl_path'] }-->js/wow.min.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/jquery-1.11.0.min.js"></script>	    
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/iconfont.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="<!--{ $wset_ary['tpl_path'] }-->js/bootsnav.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/chanping.js"></script>
+	</head>
+	<body>	
+		<!--{include "head.htm"}-->
+		
+		<div class="container">
+		<!--产品-->
+			<div class="a"></div>
+		    <div class="product wow">	
+		    	<div class="product-nav wow"> 		    		    		
+		    		<!--{ffwbms ffa_sort_list,vtemp,'pid='.$get_ary[pid]}--><!--获得当前页面语种的网站结构分类表--> 
+		    		<!---{ffwbms_see $vtemp}-->
+					<!--{$a=1}-->
+					<!--{loop $vtemp $ary}-->	
+		    		<a <!--{ if $get_ary['list']==$a }-->style="background-color:#0F0F0F; color: #F8F8F8;"<!--{ /if }-->href="?tpl=<!--{$ary[spage]}-->&pid=<!--{$get_ary[pid]}-->&uid=<!--{$ary[id]}-->&sno=<!--{$get_ary[sno]}-->&list=<!--{$a}-->">
+		    			
+		    		<!--{$ary[sname]}-->
+		    			
+		    		</a><!--$ary[spage：返回分类要使用的模板文件名； $ary[sname]：返回分类名  -->
+		    		<!--{$a ++}-->
+					<!--{ /loop }-->		
+		    	</div>
+		    	<div class="phone-nav">
+					<a class="phone-nav-head clearfix" id="phone-nav-head" style="display: block;background-color:#0F0F0F;
+						color: #F8F8F8;">
+						<span style="float: left;">全部</span>
+						<i class="iconfont icon-xia" style="float: right;font-size: 12px;"></i>
+					</a>
+					<ul class="phone-nav-menu" id="phone-nav-menu" >
+						<!--{ffwbms ffa_sort_list,vtemp,'pid='.$get_ary[pid]}--><!--获得当前页面语种的网站结构分类表--> 
+			    		<!---{ffwbms_see $vtemp[pid]}-->
+						<!--{$a=1}-->
+						<!--{loop $vtemp $ary}-->	
+						<li>
+			    		<a <!--{ if $get_ary['list']==$a }-->style="background-color:#0F0F0F; color: #F8F8F8;"<!--{ /if }-->href="?tpl=<!--{$ary[spage]}-->&pid=<!--{$get_ary[pid]}-->&uid=<!--{$ary[id]}-->&sno=<!--{$get_ary[sno]}-->&list=<!--{$a}-->">
+			    			
+			    		<!--{$ary[sname]}-->
+			    			
+			    		</a><!--$ary[spage：返回分类要使用的模板文件名； $ary[sname]：返回分类名  -->
+			    		</li>
+			    		<!--{$a ++}-->
+						<!--{ /loop }-->											    				    				    		
+					</ul>
+				</div>
+				<!--{ffwbms ffa_sort_list,vtemp,'pid='.$get_ary[pid]}--> 
+				<!--{ if $vtemp==null }-->
+		        <!--{$cur_uid=$get_ary[pid]}-->
+		        <!--{ elseif $get_ary[uid]=="" }-->
+		        <!--{$cur_uid=$vtemp[0][id]}-->
+		        <!--{ else }-->
+		        <!--{$cur_uid=$get_ary[uid]}-->
+		        <!--{ /if }-->
+		    	<div class="product-list">
+		    		<ul style="margin: auto;overflow: hidden;">
+		    			<!--{ffwbms ffa_art_pglist,vte,'pid='.$cur_uid.'|pg='.$get_ary["pg"].'|ps=6|ob=2'}-->
+		    			<!--{ffwbms ffa_art_astoplist,vte,'pid='.$cur_uid.'|ob=3'}--->
+			            <!--{loop $vte[0] $ary}-->
+			            <!--{ffwbms ffa_art_value,arry,'id='.$ary[id]}-->
+			            <!--{ffwbms_see $arry[timgary]}--->
+			            <!--{if length($vte)>0}-->
+			            <li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+							<a href="?tpl=chanpin-show&pid=<!--{$get_ary['pid']}-->&uid=<!--{$get_ary['uid']}-->&id=<!--{$ary['id']}-->&sno=<!--{$get_ary['sno']}-->&list=<!--{$get_ary['list']}-->" style="text-decoration: none;">
+								<div class="product-list-img">
+						        <img src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][2][furl]}-->"/>
+								</div>
+								<div class="product-list-title">
+									<p class="title-ellipsis"><!--{$ary[atit]}--></p>
+									<p class="subtitle-ellipsis"><!--{$ary[stit]}--></p>
+								</div>
+							</a>
+						</li>  			            	               
+		                <!--{ /if }-->
+		                <!--{ /loop }-->		    					    			
+		    		</ul>		    		
+		    	</div>
+		    </div>
+		    <!--页码-->
+		    <!--{if $vte[0]!=null}-->
+			<div class="pagety-box">
+				<p>
+				    <!--{$pgg=$vte[1]}-->
+				    <!---{ffwbms_see $pgg }-->
+				        <!--{$vUrl=urlspace($get_ary['SCRIPT_NAME'].'?tpl='.$get_ary['tpl'].'&pid='.$get_ary['pid'].'&uid='.$get_ary['uid'].'&list='.$get_ary['list'].'&sno='.$get_ary['sno'])}-->
+				    <!--{if $pgg['current']!=1}-->
+				    <a href="<!--{$vUrl}-->&pg=1"><img src="<!--{ $wset_ary['tpl_path'] }-->images/pagel.png" alt=""></a>
+				    <!--{/if}-->
+				    <!--{$p=intval($vte[1][pages], 10)}-->
+				    <!--{$ff=1}-->
+				    <!--{ while $ff-1<$p }--> 
+				    <a href="<!--{$vUrl}-->&pg=<!--{$ff}-->" class="<!--{if $ff==$pgg[current]}-->cur<!--{/if}-->"><!--{$ff}--></a>
+				    <!--{$ff ++}-->
+				    <!--{ /while }-->
+				    <!--{if $pgg['next']!=0}-->
+				    <a href="<!--{$vUrl}-->&pg=<!--{$vte[1][pages]}-->"><img src="<!--{ $wset_ary['tpl_path'] }-->images/pager.png" alt=""></a>
+				    <!--{/if}-->
+				</p>
+			</div>
+			<!--{/if}-->	
+		    <!--{include "foot.htm"}-->
+		</div>  
+	</body>
+</html>

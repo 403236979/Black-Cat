@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/animate.min.css" />
+        <link rel="stylesheet" href="<!--{ $wset_ary['tpl_path'] }-->css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/bootsnav.css">
+	    <link href="<!--{ $wset_ary['tpl_path'] }-->css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/member.css"/> 
+        <script src="<!--{ $wset_ary['tpl_path'] }-->js/wow.min.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/jquery-1.11.0.min.js"></script>	    
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/iconfont.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="<!--{ $wset_ary['tpl_path'] }-->js/bootsnav.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/chanping.js"></script>
+	</head>
+	<body>	
+		<!--{include "head.htm"}-->
+		
+		<!--介绍-->
+		<div class="a"></div>
+		<div class="container">
+			<!--{ffwbms ffa_art_value,ary_txt,'id='.$get_ary['id']}--><!--获得指定文章号的文章数据-->
+			<!--{$time=substr($ary_txt[scdt],0,10)}-->
+			<div class="title">
+			    <p style="font-family: '微软雅黑'; font-size: 20px; color:#000000;"><!--{$ary_txt[atit]}--></p>
+			    <p ><!--{$ary_txt[stit]}--></p>
+		   </div>
+		    <div class="content clearfix">
+		    	<div class="content-left col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		    		<img src="<!--{ $wset_ary['upload_path'] }--><!--{$ary_txt[timgary][0][furl]}-->" >
+		    	</div>
+		    	<div class="content-right col-xs-12 col-sm-8 col-md-8 col-lg-8">
+		    		<!--{$ary_txt[atxt]}-->
+		    	</div>
+		    </div>		    
+		</div>
+		<!--页脚-->
+	    <!--{include "foot.htm"}-->
+	</body>
+</html>

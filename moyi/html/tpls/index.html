@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>UEMO DEMO - mo005_2232</title>
+	    <link rel="stylesheet" type="text/css" href="css/chushihua.css"/>
+    	<link rel="stylesheet" type="text/css" href="css/normalize.css" /><!--数字滚动-->
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css"><!--数字滚动-->
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/> 
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" /><!--界面滚动-->
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/index.css"/> 
+	    <!--<link rel="stylesheet" href="css/1.index.css" />-->
+		<script src="js/wow.min.js"></script><!--界面滚动-->
+		<script src="js/jquery-1.11.0.min.js"></script>	
+	    <script src="js/iconfont.js"></script>
+	    <script src="js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="js/bootsnav.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script><!--数字滚动-->
+		<script type="text/javascript" src="js/jquery.countup.min.js"></script><!--数字滚动-->
+	    <script src="js/1.index.js"></script>	   	   
+	</head>
+	<body>
+		<!--导航-->				
+		<div class="demo">
+			<div class="row" style="margin-right: 0px;">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default navbar-mobile bootsnav" id="header" style="height: 90px;">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="top: 15px;">
+								<span class="sr-only">切换导航</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logo" id="logo" style="margin-top: 10px;">
+								<a href="index.html" class="navbar-brand" style="padding: 0px 15px;">
+									<div class="navbar-left">
+										<img width="60%" style="margin: auto;" src="images/logo.png">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse navbar-right nav-list" id="example-navbar-collapse" >
+							<ul class="nav navbar-nav nav-menu clearfix" data-in="fadeInDown" data-out="fadeOutUp">
+								<li >
+									<a href="index.html" class="active" ><span data-title= "首页">首页</span></a>
+								</li>
+								<li>
+									<a href="chanping.html">
+										<span data-title= "产品">产品</span>										
+									</a>									
+								</li>
+								<li>
+									<a href="anli.html">
+										<span data-title= "案例">案例</span>									
+									</a>									
+								</li>
+								<li>
+									<a href="jiage.html">
+										<span data-title= "价格">价格</span>
+									</a>
+								</li>
+								<li class="dropdown">
+									<a>
+										<span data-title= "关于">关于</span>
+										<i class="iconfont icon-xia" style="font-size: 12px;"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li style="white-space: nowrap;">
+											<a href="about.html">什么是Uemo</a>
+										</li>
+										<li style="white-space: nowrap;">
+											<a href="team.html">团队</a>
+										</li>
+										<li style="white-space: nowrap;">
+											<a href="function.html">功能</a>
+										</li>										
+									</ul>
+								</li>
+								<li>
+									<a href="help.html"><span data-title= "帮助">帮助</span></a>
+								</li>
+								<li>
+									<a href="add.html" id="nav-list-login"><span  data-title= "加盟代理" >加盟代理</span></a>
+								</li>
+								<li>
+									<a href="use.html" id="nav-list-regsiter"><span  data-title= "申请试用" >申请试用</span></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!--侧边消息条-->
+		<div class="news" id="news">
+			<div class="news-title">
+				在线咨询<button id="g" style="padding-left:40%;">&Chi;</button>
+			</div>
+			<ul class="news-qq">
+				<li>
+					<a href="tencent://message/?uin=121799830&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>121799830
+					</a>
+				</li>
+				<li>
+					<a href="tencent://message/?uin=407280793&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>407280793
+					</a>
+				</li>
+			</ul>
+		    <div class="news-tel">
+		    	<p style="padding-top: 10px;">
+		    		<i class="iconfont icon-dianhua" style="padding-right: 22%;"></i>联系电话
+	    		</p>
+		       <p style="font-size: 15px;">010-69557550</p>
+		    </div>
+		</div>
+		<div class="guild">
+			<ul>
+				<li style="background-color: #292929;">
+					<a id="e">
+						<i class="iconfont icon-xinxi"></i>
+					</a>
+				</li>
+				<li style="background-color: #ea493c;">
+					<a>
+				        <i class="iconfont icon-weibo"></i>
+			        </a>
+			    </li>
+			    <li style="background-color: #24b727">
+				    <a onclick="Show('fixed_weixin')">
+				        <i class="iconfont icon-shouji"></i>
+			        </a>
+			    </li>
+			    <li style="display: none;background-color: #292929;" id="top">
+					<a>
+				       <i class="iconfont icon-shang"></i>
+			        </a>
+			    </li>
+			</ul>
+		</div>		
+		<!--全屏二维码-->
+		<div class="fixed" id="fixed_weixin" onclick="Close('fixed_weixin')">
+			<div class="fixed-container">
+				<div id="qrcode">
+					<canvas width="220" height="220" style="display: none;"></canvas>
+					<img src="images/094455805.png" style="display: block;">
+				</div>
+				<p style="text-align: center;">扫描二维码分享到微信</p>
+			</div>
+		</div>
+		<!--幻灯片-->
+		<div class="a"></div>
+		<div id="myCarousel" class="carousel slide" style="margin-top: -10px;position: fixed;z-index:0;" >
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/lunbo1.jpg" alt="First slide">
+				</div>	
+				<div class="item">
+					<div class="item-text">
+						<p class="text-title"> 
+							<span style="color:#333">MO-005功能全新升级</span> 
+						</p>
+						<p class="text-tontent">新增 —— 单屏切换 - 无限复制列表 - 首页广告图模块 - 首页计数器</p>
+					</div>
+					<img src="images/lunbo2.jpg" alt="Second slide">
+				</div>									
+				<div class="item">
+					<img src="images/lunbo3.jpg" alt="Third slide">
+				</div>
+				<div class="item ">
+					<img src="images/lunbo4.jpg" alt="Fourth slide">
+				</div>
+			</div>
+			<!-- 轮播（Carousel）导航 -->
+			<div style="font-size: 35px;color:#ADADAD;" class="carousel-control left" href="#myCarousel" 
+			   data-slide="prev">
+			   	<a>
+				   	<span style="background: url(images/qiehuan.png) no-repeat 0px -8px;height: 10px;width: 38px;display: inline-block;">				   		
+				   	</span>
+			    </a>
+			</div>
+			<div style="font-size: 35px;color:#ADADAD;" class="carousel-control right" href="#myCarousel" 
+			   data-slide="next">
+			   	<a>
+				   	<span style="background: url(images/qiehuan.png) no-repeat -54px -8px;height: 10px;width: 38px;display: inline-block;">				   		
+				   	</span>
+			    </a>
+			</div>
+			<!--<a style="background-color:rgba(255,255,255,0) ;" class="carousel-control left" href="#myCarousel" 
+			   data-slide="prev">&lsaquo;</a>
+			<a style="background-color:rgba(255,255,255,0) ;" class="carousel-control right" href="#myCarousel" 
+			   data-slide="next">&rsaquo;</a>-->
+		</div> 
+		<div class="container">	
+			<!--统计-->
+			<div class="count wow">
+		    	<div class="demo clearfix" style="margin: auto;">
+		    			<div class="count-text col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		    				<p class="p"><span class="counter">16,928</span> <span class="unit">+</span></p>
+		    				<p class="p1">累计服务网站</p>
+		    			</div>
+		    		
+		    			<div class="count-text col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		    				<p class="p"><span class="counter">66</span> <span class="unit">款</span></p>
+		    				<p class="p1">建站产品</p>
+		    			</div>
+		    		
+		    			<div class="count-text col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		    				<p class="p"><span class="counter">11</span> <span class="unit">年</span></p>
+		    				<p class="p1">高端WEB服务</p>
+		    			</div>
+		    		
+		    			<div class="count-text col-xs-3 col-sm-3 col-md-3 col-lg-3" style="border: 0px;">
+		    				<p class="p"><span class="counter">376</span> <span class="unit">+</span></p>
+		    				<p class="p1">覆盖城市</p>
+		    			</div>
+		    	</div>
+		   </div>			
+		    <!--限时特价-->
+		    <div class="price wow" style="background-image: url(images/background1.jpg);">
+		    	<div class="price-img">
+		    		<a href="index.html">
+		    			<img src="images/image1.png" />
+		    		</a>
+		    	</div>
+		    </div>
+		    <!--产品-->
+		    <div class="product wow">
+		    	<div class="product-title">		    		
+		    		<p class="product-title-p">产品</p>
+		    		<p class="product-title-p1">
+		    			10年建站经验 + 800家企业客户 + 顶尖建站团队 = UEMO高端企业站
+		    		</p>		    	    
+		    	</div>
+		    	<div class="product-nav wow"> 
+		    		<a href="chanping.html" style="background-color:#0F0F0F; color: #F8F8F8;">全部</a>
+		    		<a>医疗教育</a>
+		    		<a>企业集团</a>
+		    		<a>建筑装饰</a>
+		    		<a>生活家居</a>
+		    		<a>摄影摄像</a>
+		    		<a>艺术设计</a>
+		    		<a>服装饰品</a>
+		    		<a>餐饮美食</a>
+		    	</div>
+		    	<div class="product-list">
+		    		<ul style="margin: auto;overflow: hidden;">
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a  href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>
+		    			<li class="wow col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		    				<a href="chanpin-show.html" style="text-decoration: none;">
+	    						<div class="product-list-img">
+	    				        <img src="images/161529772.png"/>
+	    						</div>
+	    						<div class="product-list-title">
+	    							<p class="title-ellipsis">mo005_2105</p>
+	    							<p class="subtitle-ellipsis">建筑装饰-内置10套颜色-可切换全屏单页滚动</p>
+	    						</div>
+	    					</a>
+		    			</li>		    			
+		    		</ul>
+		    		
+		    	</div>
+		    </div>
+		    <!--什么是UEMO-->
+			<div class="about wow ">
+	        	<div class="about-content clearfix">
+		        	<div class="about-text col-sm-12 col-md-12 col-lg-4">
+		        		<p class="about-text-p1">
+		        			什么是UEMO
+		        		</p>
+		        		<p class="about-text-p2">
+		        			About us
+		        		</p>
+		        		<hr/>
+		        		<div class="about-text-p3">        		
+		        			我们拥有10几年的高端企业网站定制服务，曾服务过：海尔、联想、北京电通、BIAD、雅虎、凤凰中心、民生银行等尽500多家高端企业用户。就是让您在半天时间内拥有一套高端企业网站！去除响应式，独立PC+手机的网站
+		        		</div>
+		        		<div class="about-more">
+		        			<a href="about.html">more</a>
+		        		</div>
+		        	</div>   
+		        	<div class="about-img col-sm-12 col-md-12 col-lg-8">
+		        		<a href="about.html"> 
+		        			<img src="images/1490857359617.png"/>
+		        		</a>
+		        	</div>
+	        	</div>
+	        </div>
+	        <!--核心团队-->
+	        <div class="team wow">
+		    	<div class="team-title">
+		    		<p class="team-title-p1">
+	        			核心团队
+	        		</p>
+	        		<p class="team-title-p2">
+	        			Team
+	        		</p>
+		    	</div>
+		    	<div class="team-content">			    		
+			    	<ul class="team-list" id="h">			  		
+				    	<li class="team-list-li">
+				    		<a href="member.html" style="text-decoration: none;">	
+					    		<div class="team-list-img">
+				    				<img src="images/member1.jpg">
+				    			</div>
+					    		<div class="team-list-text"   id="a">		    			
+					    			<div>
+					    				<div class="team-list-title">
+					    					<p class="team-list-title-p1">&nbsp;&nbsp;韩雪冬(kaven)
+					    						<span class="team-list-title-span">
+					    							UEmo/UElike/UEhtml创始人
+					    						</span>
+					    					</p>
+					    				</div>
+					    				<div class="team-list-content" >			    					
+						    				<div class="team-list-content-text" id="style-1">
+						    					<p><strong style="color: #000000;">奖项</strong> —— 第九届中国设计业青年百人榜获奖者并颁发证书  -  Adobe TOP领航者之一  并颁发证书  -  作品收录意大利全国工业设计协会丛书中  -  中国最大设计平台站酷颁发 - 设计10年成就奖</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">荣誉(国际)</strong> —— 欧美Awwwards： 2012年作品曾被Awwwards设计评审机构评为全球最佳CSS网站！（中国仅此一家）由来自8个国家的国际评审团评分，作品获此次评审的最高奖项，并颁发证书。作品刊登在《 The 365 Best Css Websites Around The World》一书中。欧美CSS设计奖获奖作品： cssdesignawards欧美CSS画廊设计奖项首页顶部展示1月27日的最佳设计作品。世界著名设计杂志NWP：推荐网站 世界权威电子设计杂志 NEWWEBPICK / 案例被收录NEWWEBPICK电子杂志 （第29期）。新西兰GOUW设计师平台：Graphic orgasm Ultimate WebportalGOUW.NU  Site Design Links and Graphics。美国Tympanus：选出35个杰出视觉体验网站，作品被选其中（中国站仅此一个）</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">评委 </strong>—— 站酷主办 曲美家具电脑桌面壁纸设计活动 设计评委  -  2014-2015中国网页设计联盟 设计评委  -  2015-2016中国网页设计联盟 设计评委  -  2016-2017中国网页设计联盟 设计评委</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">出版</strong> —— 站酷主办 出版资深设计师的Photoshop创意课丛书人员之一</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">受邀</strong> —— 2010年 受邀请 到“中国移动飞信"做设计分享  -  2012年 受邀请 到“创新工场”做设计分享  -  2013年 受邀请 到“美团”给美团UED做设计分享  -  2015年 受邀请 到“中美设计顾问机构”做设计分享</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">讲座/专访</strong> —— 曾星狮网页设计师高级班讲师  -  站酷专访-轻视觉 重体验  -  站酷设计公开课：听韩雪冬谈网站设计——餐厅网站设计案例分享</p>
+						    				</div>
+					    			    </div>
+					    			</div>					    		
+				    			</div>
+				    		</a>		    	
+				    	</li>
+				    	<li class="team-list-li">
+				    		<a href="member.html" style="text-decoration: none;">	
+					    		<div class="team-list-img">
+				    				<img src="images/member2.png">
+				    			</div>
+					    		<div class="team-list-text"   id="a">					    					    			
+					    			<div>
+					    				<div class="team-list-title">
+					    					<p class="team-list-title-p1">&nbsp;&nbsp;韩雪冬(kaven)
+					    						<span class="team-list-title-span">
+					    							UEmo/UElike/UEhtml创始人
+					    						</span>
+					    					</p>
+					    				</div>
+					    				<div class="team-list-content" >			    					
+						    				<div class="team-list-content-text" id="style-1">
+						    					<p><strong style="color: #000000;">奖项</strong> —— 第九届中国设计业青年百人榜获奖者并颁发证书  -  Adobe TOP领航者之一  并颁发证书  -  作品收录意大利全国工业设计协会丛书中  -  中国最大设计平台站酷颁发 - 设计10年成就奖</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">荣誉(国际)</strong> —— 欧美Awwwards： 2012年作品曾被Awwwards设计评审机构评为全球最佳CSS网站！（中国仅此一家）由来自8个国家的国际评审团评分，作品获此次评审的最高奖项，并颁发证书。作品刊登在《 The 365 Best Css Websites Around The World》一书中。欧美CSS设计奖获奖作品： cssdesignawards欧美CSS画廊设计奖项首页顶部展示1月27日的最佳设计作品。世界著名设计杂志NWP：推荐网站 世界权威电子设计杂志 NEWWEBPICK / 案例被收录NEWWEBPICK电子杂志 （第29期）。新西兰GOUW设计师平台：Graphic orgasm Ultimate WebportalGOUW.NU  Site Design Links and Graphics。美国Tympanus：选出35个杰出视觉体验网站，作品被选其中（中国站仅此一个）</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">评委 </strong>—— 站酷主办 曲美家具电脑桌面壁纸设计活动 设计评委  -  2014-2015中国网页设计联盟 设计评委  -  2015-2016中国网页设计联盟 设计评委  -  2016-2017中国网页设计联盟 设计评委</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">出版</strong> —— 站酷主办 出版资深设计师的Photoshop创意课丛书人员之一</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">受邀</strong> —— 2010年 受邀请 到“中国移动飞信"做设计分享  -  2012年 受邀请 到“创新工场”做设计分享  -  2013年 受邀请 到“美团”给美团UED做设计分享  -  2015年 受邀请 到“中美设计顾问机构”做设计分享</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">讲座/专访</strong> —— 曾星狮网页设计师高级班讲师  -  站酷专访-轻视觉 重体验  -  站酷设计公开课：听韩雪冬谈网站设计——餐厅网站设计案例分享</p>
+						    				</div>
+					    			    </div>
+					    			</div>
+				    			</div>	
+			    			</a>
+				    	</li>			
+				    	<li class="team-list-li">
+				    		<a href="member.html" style="text-decoration: none;">
+					    		<div class="team-list-img">
+				    				<img src="images/member3.jpg">
+				    			</div>
+					    		<div class="team-list-text"   id="a">				    					    			
+					    			<div>
+					    				<div class="team-list-title">
+					    					<p class="team-list-title-p1">&nbsp;&nbsp;韩雪冬(kaven)
+					    						<span class="team-list-title-span">
+					    							UEmo/UElike/UEhtml创始人
+					    						</span>
+					    					</p>
+					    				</div>
+					    				<div class="team-list-content" >			    					
+						    				<div class="team-list-content-text" id="style-1">
+						    					<p><strong style="color: #000000;">奖项</strong> —— 第九届中国设计业青年百人榜获奖者并颁发证书  -  Adobe TOP领航者之一  并颁发证书  -  作品收录意大利全国工业设计协会丛书中  -  中国最大设计平台站酷颁发 - 设计10年成就奖</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">荣誉(国际)</strong> —— 欧美Awwwards： 2012年作品曾被Awwwards设计评审机构评为全球最佳CSS网站！（中国仅此一家）由来自8个国家的国际评审团评分，作品获此次评审的最高奖项，并颁发证书。作品刊登在《 The 365 Best Css Websites Around The World》一书中。欧美CSS设计奖获奖作品： cssdesignawards欧美CSS画廊设计奖项首页顶部展示1月27日的最佳设计作品。世界著名设计杂志NWP：推荐网站 世界权威电子设计杂志 NEWWEBPICK / 案例被收录NEWWEBPICK电子杂志 （第29期）。新西兰GOUW设计师平台：Graphic orgasm Ultimate WebportalGOUW.NU  Site Design Links and Graphics。美国Tympanus：选出35个杰出视觉体验网站，作品被选其中（中国站仅此一个）</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">评委 </strong>—— 站酷主办 曲美家具电脑桌面壁纸设计活动 设计评委  -  2014-2015中国网页设计联盟 设计评委  -  2015-2016中国网页设计联盟 设计评委  -  2016-2017中国网页设计联盟 设计评委</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">出版</strong> —— 站酷主办 出版资深设计师的Photoshop创意课丛书人员之一</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">受邀</strong> —— 2010年 受邀请 到“中国移动飞信"做设计分享  -  2012年 受邀请 到“创新工场”做设计分享  -  2013年 受邀请 到“美团”给美团UED做设计分享  -  2015年 受邀请 到“中美设计顾问机构”做设计分享</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">讲座/专访</strong> —— 曾星狮网页设计师高级班讲师  -  站酷专访-轻视觉 重体验  -  站酷设计公开课：听韩雪冬谈网站设计——餐厅网站设计案例分享</p>
+						    				</div>
+					    			    </div>
+					    			</div>					    		
+				    			</div>
+				    		</a>			    	
+				    	</li>
+				    	<li class="team-list-li">
+				    		<a href="member.html" style="text-decoration: none;">
+					    		<div class="team-list-img">
+				    				<img src="images/member4.jpg">
+				    			</div>
+					    		<div class="team-list-text"   id="a">					    					    			
+					    			<div>
+					    				<div class="team-list-title">
+					    					<p class="team-list-title-p1">&nbsp;&nbsp;韩雪冬(kaven)
+					    						<span class="team-list-title-span">
+					    							UEmo/UElike/UEhtml创始人
+					    						</span>
+					    					</p>
+					    				</div>
+					    				<div class="team-list-content" >			    					
+						    				<div class="team-list-content-text" id="style-1">
+						    					<p><strong style="color: #000000;">奖项</strong> —— 第九届中国设计业青年百人榜获奖者并颁发证书  -  Adobe TOP领航者之一  并颁发证书  -  作品收录意大利全国工业设计协会丛书中  -  中国最大设计平台站酷颁发 - 设计10年成就奖</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">荣誉(国际)</strong> —— 欧美Awwwards： 2012年作品曾被Awwwards设计评审机构评为全球最佳CSS网站！（中国仅此一家）由来自8个国家的国际评审团评分，作品获此次评审的最高奖项，并颁发证书。作品刊登在《 The 365 Best Css Websites Around The World》一书中。欧美CSS设计奖获奖作品： cssdesignawards欧美CSS画廊设计奖项首页顶部展示1月27日的最佳设计作品。世界著名设计杂志NWP：推荐网站 世界权威电子设计杂志 NEWWEBPICK / 案例被收录NEWWEBPICK电子杂志 （第29期）。新西兰GOUW设计师平台：Graphic orgasm Ultimate WebportalGOUW.NU  Site Design Links and Graphics。美国Tympanus：选出35个杰出视觉体验网站，作品被选其中（中国站仅此一个）</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">评委 </strong>—— 站酷主办 曲美家具电脑桌面壁纸设计活动 设计评委  -  2014-2015中国网页设计联盟 设计评委  -  2015-2016中国网页设计联盟 设计评委  -  2016-2017中国网页设计联盟 设计评委</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">出版</strong> —— 站酷主办 出版资深设计师的Photoshop创意课丛书人员之一</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">受邀</strong> —— 2010年 受邀请 到“中国移动飞信"做设计分享  -  2012年 受邀请 到“创新工场”做设计分享  -  2013年 受邀请 到“美团”给美团UED做设计分享  -  2015年 受邀请 到“中美设计顾问机构”做设计分享</p>
+						    					<br />
+						    					<p><strong style="color: #000000;">讲座/专访</strong> —— 曾星狮网页设计师高级班讲师  -  站酷专访-轻视觉 重体验  -  站酷设计公开课：听韩雪冬谈网站设计——餐厅网站设计案例分享</p>
+						    				</div>
+					    			    </div>
+					    			</div>					    		
+				    			</div>	
+				    		</a>		    	
+				    	</li>				    
+			       	</ul> 		        
+		    	</div>
+		    </div>
+		    <div class="member wow">
+		    	<div style="width: 60%;margin: auto;">
+		        	<p id="z" class="icon"></p>	
+		        </div>
+		    	<table style="width:60%; margin: auto;">
+		    		<tr>
+		    			<td>
+		    				<a style="text-decoration: none;" id="u1">
+		    					<div class="member-img">
+		    						<img src="images/member1.jpg">
+		    					</div>
+		    					<div class="member-text">
+		    						<p class="member-text-p">韩雪冬(kaven)</p>
+		    						<p>UEmo/UElike/UEhtml创始人</p>
+		    					</div>
+		    				</a>
+		    			</td>
+		    			<td>
+		    				<a style="text-decoration: none;" id="u2">
+		    					<div class="member-img">
+		    						<img src="images/member2.png">
+		    					</div>
+		    					<div class="member-text">
+		    						<p class="member-text-p">甄瑞芳(Touch)</p>
+		    						<p>UEMO项目负责人/运营总监</p>
+		    					</div>		    				
+		    				</a>
+		    			</td>
+		    			<td>
+		    				<a style="text-decoration: none;" id="u3">
+		    					<div class="member-img">
+		    						<img src="images/member3.jpg">
+		    					</div>
+		    					<div class="member-text">
+		    						<p class="member-text-p">张政(Alan)</p>
+		    						<p>程序架构师，技术总监</p>
+		    					</div>			    					
+		    				</a>
+		    			</td>
+		    			<td>
+		    				<a style="text-decoration: none;" id="u4">
+		    					<div class="member-img">
+		    						<img src="images/member4.jpg">
+		    					</div>
+		    					<div class="member-text">
+		    						<p class="member-text-p">崔莎莎(Shasha)</p>
+		    						<p>UElike/UEmo 设计总监</p>
+		    					</div>			    					
+		    				</a>
+		    			</td>
+		    		</tr>
+		    	</table>
+	    	</div>
+	    	<!--手机团队界面-->
+	    	<div class="phone-team">
+	    		<div class="team-title">
+		    		<p class="team-title-p1">
+	        			核心团队
+	        		</p>
+	        		<p class="team-title-p2">
+	        			Team
+	        		</p>
+		    	</div>
+	    		<ul class="clearfix">
+	    			<li class="clearfix">
+	    				<a href="member.html">
+		    				<div class="phone-team-img col-xs-3 col-sm-3">
+		    					<img src="images/member1.jpg">
+		    				</div>
+		    				<div class="phone-team-text col-xs-9 col-sm-9">
+		    					<p style=" font-size=16px;color: #000;"><strong style="color: #000000;">韩雪冬(kaven)</strong></p>
+	    						<p style="font-size: 10px;color: #898989;">UEmo/UElike/UEhtml创始人</p>
+	    						<p style="color: #898989;"><strong style="color: #000000;">奖项</strong> —— 第九届中国设计业青年百人榜获奖者并颁发证书  -中国最大设计平台站酷颁发 - 设计10年成就奖</p>
+		    				</div>
+	    				</a>
+	    			</li>
+	    			<li class="clearfix">	
+	    				<a href="member.html">
+		    				<div class="phone-team-text col-xs-9 col-sm-9">
+		    					<p style=" font-size=16px;color: #000;"><strong style="color: #000000;">韩雪冬(kaven)</strong></p>
+	    						<p style="font-size: 10px;color: #898989;">UEmo/UElike/UEhtml创始人</p>
+	    						<p style="color: #898989;"><strong style="color: #000000;">奖项</strong> —— 第九届中国设计业青年百人榜获奖者并颁发证书  -中国最大设计平台站酷颁发 - 设计10年成就奖</p>
+		    				</div>
+		    				<div class="phone-team-img col-xs-3 col-sm-3">
+		    					<img src="images/member2.png">
+		    				</div>
+		    			</a>	
+	    			</li>
+	    			<li class="clearfix">
+	    				<a href="member.html">
+		    				<div class="phone-team-img col-xs-3 col-sm-3">
+		    					<img src="images/member3.jpg">
+		    				</div>
+		    				<div class="phone-team-text col-xs-9 col-sm-9">
+		    					<p style=" font-size=16px;color: #000;"><strong style="color: #000000;">韩雪冬(kaven)</strong></p>
+	    						<p style="font-size: 10px;color: #898989;">UEmo/UElike/UEhtml创始人</p>
+	    						<p style="color: #898989;"><strong style="color: #000000;">奖项</strong> —— 第九届中国设计业青年百人榜获奖者并颁发证书  -中国最大设计平台站酷颁发 - 设计10年成就奖</p>
+		    				</div>
+		    			</a>	
+	    			</li>
+	    			<li class="clearfix">
+	    				<a href="member.html">
+		    				<div class="phone-team-text col-xs-9 col-sm-9">
+		    					<p style=" font-size=16px;color: #000;"><strong style="color: #000000;">韩雪冬(kaven)</strong></p>
+	    						<p style="font-size: 10px;color: #898989;">UEmo/UElike/UEhtml创始人</p>
+	    						<p style="color: #898989;"><strong style="color: #000000;">奖项</strong> —— 第九届中国设计业青年百人榜获奖者并颁发证书  -中国最大设计平台站酷颁发 - 设计10年成就奖</p>
+		    				</div>
+		    				<div class="phone-team-img col-xs-3 col-sm-3">
+		    					<img src="images/member4.jpg">
+		    				</div>
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<!--帮助-->
+	    	<div class="help wow">
+			    <div class="help-title">
+			    	<div class="product-title">
+			    		<p class="product-title-p">
+		        			帮助
+		        		</p>
+		        		<p style="color: #848484;font-size: 1pc;">
+		        			Help
+		        		</p>
+			    	</div>
+			    	<div class="product-nav"> 
+			    		<a href="help.html" style="background-color:#0F0F0F">全部</a>
+			    		<a>通知</a>
+			    		<a>新闻</a>
+			    		<a>教程</a>
+			    	</div>
+			    </div>
+			    <div class="help-list clearfix">
+			    	<ul class="help-list-ul1 clearfix">
+			    		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+			    			<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content clearfix">
+	    							<div class="help-time">
+	    							   	<p class="help-time-p1">02-09</p>
+	    							  	<p class="help-time-p2">2016</p>
+	    							</div>
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业的设计师怎么办</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">
+	    							   		好的网站不仅需要交互及用户体验、更需要用图片来引导用户，网页是由图片、文字、链接、多媒体组成.
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+			    		</li>
+			    		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+			    			<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content">
+	    							<div class="help-time">
+	    							   	<p class="help-time-p1">02-09</p>
+	    							  	<p class="help-time-p2">2016</p>
+	    							</div>
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业的设计师怎么办</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">
+	    							   		好的网站不仅需要交互及用户体验、更需要用图片来引导用户，网页是由图片、文字、链接、多媒体组成.
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+			    		</li>
+			    		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+			    			<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content">
+	    							<div class="help-time">
+	    							   	<p class="help-time-p1">02-09</p>
+	    							  	<p class="help-time-p2">2016</p>
+	    							</div>
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业的设计师怎么办</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">
+	    							   		好的网站不仅需要交互及用户体验、更需要用图片来引导用户，网页是由图片、文字、链接、多媒体组成.
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+			    		</li>
+			    		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+			    			<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content">
+	    							<div class="help-time">
+	    							   	<p class="help-time-p1">02-09</p>
+	    							  	<p class="help-time-p2">2016</p>
+	    							</div>
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业的设计师怎么办</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">
+	    							   		好的网站不仅需要交互及用户体验、更需要用图片来引导用户，网页是由图片、文字、链接、多媒体组成.
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+			    		</li>
+			    		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+			    			<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content">
+	    							<div class="help-time">
+	    							   	<p class="help-time-p1">02-09</p>
+	    							  	<p class="help-time-p2">2016</p>
+	    							</div>
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业的设计师怎么办</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">
+	    							   		好的网站不仅需要交互及用户体验、更需要用图片来引导用户，网页是由图片、文字、链接、多媒体组成.
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+			    		</li>
+			    		<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+			    			<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content">
+	    							<div class="help-time">
+	    							   	<p class="help-time-p1">02-09</p>
+	    							  	<p class="help-time-p2">2016</p>
+	    							</div>
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业的设计师怎么办</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">
+	    							   		好的网站不仅需要交互及用户体验、更需要用图片来引导用户，网页是由图片、文字、链接、多媒体组成.
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+			    		</li>
+			    	</ul>		    		
+		    		<!--手机端-->
+		    		<ul class="help-list-ul2 clearfix">	      					            
+						<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+							<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content clearfix">
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业设计师怎么办？</p>
+	    							   	<p class="content-text-content-p2" >
+	    							   		<span>09-07</span>
+	    							   		<span>2016</span>
+    							   		</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">	    							   		
+	    							   		UEMO极速建站结合UE设计平台为您提供为您提供4万多个网页设计师，解决网站图片设计问题...	    							 
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+						</li>
+						<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+							<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content clearfix">
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业设计师怎么办？</p>
+	    							   	<p class="content-text-content-p2" >
+	    							   		<span>09-07</span>
+	    							   		<span>2016</span>
+    							   		</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">	    							   		
+	    							   		UEMO极速建站结合UE设计平台为您提供为您提供4万多个网页设计师，解决网站图片设计问题...	    							 
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+						</li>
+						<li class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+							<a href="help-show.html" style="text-decoration: none;">
+	    						<div class="help-content clearfix">
+	    							<div class="help-text">
+	    							   	<p class="help-text-p1">没有专业设计师怎么办？</p>
+	    							   	<p class="content-text-content-p2" >
+	    							   		<span>09-07</span>
+	    							   		<span>2016</span>
+    							   		</p>
+	    							   	<br />
+	    							   	<p class="help-text-p2">	    							   		
+	    							   		UEMO极速建站结合UE设计平台为您提供为您提供4万多个网页设计师，解决网站图片设计问题...	    							 
+	    							   	</p>
+	    							</div>
+	    						</div>
+	    					</a>
+						</li>						
+	      			</ul>
+			    </div>
+		    </div>
+			<!--推荐用户-->
+			<div class="user clearfix wow">
+		  	    <div class="product-title">
+		    		<p class="product-title-p">
+	        			推荐用户
+	        		</p>
+	        		<p style="font-family: '微软雅黑'; font-size: 15px; color: #8C8C8C;">
+	        			Recommend customers
+	        		</p>
+		    	</div>
+		    	<div class="user-content clearfix">
+		    		<ul style="margin: auto;">
+		    			<li class="user-list col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		    				<div class="user-list-img">
+			    				<img src="images/tj1.png">
+			    		  	</div>
+		    			</li>
+		    			<li class="user-list col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		    				<div class="user-list-img">
+			    				<img src="images/tj1.png">
+			    		  	</div>
+		    			</li>
+		    			<li class="user-list col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		    				<div class="user-list-img">
+			    				<img src="images/tj2.png">
+			    		  	</div>
+		    			</li>
+		    			<li class="user-list col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		    				<div class="user-list-img">
+			    				<img src="images/tj3.png">
+			    		  	</div>
+		    			</li>
+		    			<li class="user-list col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		    				<div class="user-list-img">
+			    				<img src="images/tj4.png">
+			    		  	</div>
+		    			</li>
+		    			<li class="user-list col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		    				<div class="user-list-img">
+			    				<img src="images/tj5.png">	
+			    		  	</div>
+		    			</li>
+		    			<li class="user-list col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		    				<div class="user-list-img">
+			    				<img src="images/tj6.png">
+			    		  	</div>
+		    			</li>
+		    			<li class="user-list col-xs-6 col-sm-6 col-md-3 col-lg-3">
+		    				<div class="user-list-img">
+			    				<img src="images/tj4.png">	
+			    		  	</div>
+		    			</li>
+		    		</ul>			    	
+		    	</div>
+		  	</div>
+		  	<!--UEMO建站流程-->
+		  	<div class="process wow">
+		  	    <div class="product-title">
+		    		<p class="product-title-p">
+	        			UEMO建站流程
+	        		</p>
+	        		<p style="font-size: 14px; color: #999;">
+	        			Process
+	        		</p>
+		    	</div>
+		    	<div class="process-img">
+		    		<img src="images/jz.png">
+		    	</div>
+		  	</div>
+		  	<!--联系-->
+		  	<div class="link">
+			  	<div class="link-content clearfix">
+				  	<div class="link1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				    	<p class="link1-p1">
+			        		联系我们
+			       		</p>
+			       		<p class="link1-p2">
+			       			Contact Us
+			       		</p>
+				   </div>			    
+				    <div class="link2 col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				    	<div>
+				    		<p class="link2-p1">关注</p>
+				    	</div>
+				    	<div> 
+				    		<a class="iconfont icon-weibo"></a>
+				    		<a class="iconfont icon-qq"></a>
+				    		<a class="iconfont icon-weixin"></a>
+				    	</div>
+				    </div>
+			    
+				    <div class="link3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				    	<h4>
+				    		北京优艺客文化传播有限公司
+				    	</h4>
+				    	<p >地址：北京市通州区新华大街北京ONE写字楼2605</p>
+				    	<p >邮编：101100</p>
+				    	<p >电话：010-69557550</p>
+				    	<p >手机：13811334772 / 18611811021</p>
+				    	<p >邮箱：touch@uelike.com</p>
+				    </div>
+			    </div>
+		    </div>
+			<!--页脚-->
+			<div class="foot">
+				<div style="width: 80%;margin: auto;">
+			      	<p style="text-align: center; padding-top: 1%;">
+			      		<span style="font-family: '微软雅黑';font-size: 10px; color:#737373;">
+			      	   		COPYRIGHT (©) 2017  魔艺极速建站 - UEMO企业版- 优艺客旗下品牌 - 网站模板 - 智能建站 - 企业建站. 
+			         	</span>	
+				      	<a style="color: #737373; font-size: 10px;margin-left: 10px;">京ICP备12019481号-5</a>
+				      	<span style=" color:#737373; font-size: 10px; display: inline-block;">
+				      		技术支持
+				      	</span>
+				      	<a href="http://www.vikihui.com" target="_blank" style="display: inline-block;">
+			      			<img src="images/094351995.png" width="50%">
+			      		</a>
+			      	</p>
+		      	</div>
+	        </div>
+		</div>
+		<script type="text/javascript">
+			$('.counter').countUp();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/animate.min.css" />
+        <link rel="stylesheet" href="<!--{ $wset_ary['tpl_path'] }-->css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/bootsnav.css">
+	    <link href="<!--{ $wset_ary['tpl_path'] }-->css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/jiage.css"/> 
+        <script src="<!--{ $wset_ary['tpl_path'] }-->js/wow.min.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/jquery-1.11.0.min.js"></script>		    
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/iconfont.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="<!--{ $wset_ary['tpl_path'] }-->js/bootsnav.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/chanping.js"></script>	
+	</head>
+	<body>	
+		<!--{include "head.htm"}-->
+			
+		<div class="container">
+		<!--价格-->
+			<div class="a"></div>
+			<div class="jiage">
+				<!--{ffwbms ffa_sort_db,vte1,'id=14'}--><!--获得指定分类号的数据-->
+        		<!--{ffwbms ffa_art_value,vte1_art,'id='.$vte1[sart]}--><!--获得指定文章号的文章数据    $vte1[sart]：返回分类所属文章号-->
+			    <div class="jiage-title">
+					<p style="font-family: '微软雅黑';font-size: 22px;color: #000000;">
+						<!--{$vte1[sname]}-->
+					</p>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #8C8C8C;margin-top: 7px;">
+						<!--{$vte1[abs]}-->
+					</p>
+				</div>
+				<div class="jiage-title-content">
+			        <!--{$vte1[atxt]}-->
+				</div>
+			</div>
+			
+			<ul class="table clearfix">
+				<!--{ffwbms ffa_art_pglist,vtemp,'pid=14'.'|pg='.$get_ary["pg"].'|ps=4|ob=3'}--><!--获得文章分页列表-->           
+		        <!--{loop $vtemp[0] $ary}-->
+		        <!--{ffwbms ffa_art_value,arry,'id='.$ary[id]}-->
+		        <!--{$time=substr($ary[scdt],0,10)}-->		        
+		        <li class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="table-list">
+					<p>
+						<img src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][0][furl]}-->"/>
+					</p>
+					<!--{$arry[atxt]}-->
+					<p><br><br></p>
+					</div>
+				</li>
+		        <!--{ /loop }-->
+		        
+			</ul>		
+			<div class="introduce">
+				<a style="color: rgb(191, 191, 191);">
+					功能介绍及视频讲解
+				</a>
+			</div>
+			<!--{ffwbms ffa_sort_db,vte1,'id=14'}--><!--获得指定分类号的数据-->
+    		<!--{ffwbms ffa_art_value,vte1_art,'id='.$vte1[sart]}--><!--获得指定文章号的文章数据    $vte1[sart]：返回分类所属文章号-->
+			<div class="jiage-img">
+				<img src="<!--{ $wset_ary['upload_path'] }--><!--{$vte1_art[timgary][0][furl]}-->" alt="">
+			</div>
+			
+			<div style="margin-left:2%;">
+				<p style="font-family:'微软雅黑';font-size:13px; text-align:left; padding:2% 0;">
+					<!--{$vte1[keys]}-->
+				</p>
+				
+				<div class="pay">
+					<p >
+						支付方式
+					</p>
+					<hr/>
+				</div>
+				
+				<div class="way">
+					<p>①&nbsp;银行转账</p>
+				</div>
+				<div >
+					<ul class="clearfix">
+						<!--{ffwbms ffa_art_pglist,vtemp,'pid=14'.'|pg='.$get_ary["pg"].'|ps=4|ob=2'}--><!--获得文章分页列表-->           
+				        <!--{loop $vtemp[0] $ary}-->
+				        <!--{ffwbms ffa_art_value,arry,'id='.$ary[id]}-->
+				        <!--{$time=substr($ary[scdt],0,10)}-->		        
+				        <li class="col-xs-12 col-sm-6 col-md-3 col-lg-3">														
+							<div class="bank">
+								<p style="padding: 1% 0;color: rgb(0, 176, 240);"><!--{$arry[atit]}--></p>
+								<p style=" line-height: 22px;font-size: 13px;">
+									<!--{$arry[atxt]}-->
+								</p>
+							</div>
+						</li>
+				        <!--{ /loop }-->
+				        
+					</ul>
+					<hr style="margin-top: 30px; margin-bottom: 20px; border: 1px dotted #d3d3d3; margin-right: 40px; "/>
+				</div>		
+				<div>
+					<ul class="clearfix">
+						<li class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+							<div class="way">
+				                <p>②&nbsp; 支付宝转账-扫码付款</p>
+				            </div>
+				            <div class="account">
+				                <p>
+				            	    支付宝账号：touch@uelike.com<br />
+				                	支付宝名称：北京优艺客文化传播有限公司
+				                </p>
+				                <img src="<!--{ $wset_ary['tpl_path'] }-->images/jg8.jpg" >
+				            </div>
+						</li>
+						<li class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+							<div class="way">
+				                <p>③&nbsp; 微信买单-扫描门店付款码</p>
+			                </div>
+			                <div class="account">
+			                    <p>
+			                	   	uemo<br/>
+		                           	北京优艺客文化传播有限公司
+			                    </p>
+			                    <img src="<!--{ $wset_ary['tpl_path'] }-->images/jg8.jpg">
+			                </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--页脚-->
+	    <!--{include "foot.htm"}-->
+	</body>
+</html>

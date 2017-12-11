@@ -1,0 +1,125 @@
+<div class="demo" >
+	<div class="row" style="margin-right: 0px;">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default navbar-mobile bootsnav" id="header" style="height: 90px;">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="top: 15px;">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="logo" id="logo" style="margin-top: 10px;">
+						<a href="/" class="navbar-brand" style="padding: 0px 15px;">
+							<div class="navbar-left">
+								<img width="60%" style="margin: auto;" src="<!--{$langset_ary[logo]}-->">
+							</div>
+						</a>
+					</div>						
+				</div>
+				<div class="collapse navbar-collapse  navbar-right nav-list" id="example-navbar-collapse">
+					<ul class="nav navbar-nav nav-menu clearfix" data-in="fadeInDown" data-out="fadeOutUp">
+						<li >
+							<a style="color: rgb(153, 153, 153);" href="/" <!--{if $get_ary[sno]==""}-->class="active"<!--{/if}-->  ><span data-title= "首页">首页</span></a>
+						</li>
+						<!--{ffwbms ffa_sort_list,vtemp,'pid=1'}--><!--ffa_sort_list获得分类列表-->
+				            <!--{$a=1}-->
+				            <!--{loop $vtemp $ary}-->
+				            <!--{ffwbms ffa_sort_list,vtemp2,'pid='.$ary[id]}-->  <!--ffa_sort_list获得分类列表-->
+				            <li <!--{if $ary[id]==15}-->class="dropdown"<!--{/if}-->>
+				            	<a style="color: rgb(153, 153, 153);"
+				            		<!--{if $ary[id]!=15}-->href="<!--{ $get_ary['SCRIPT_NAME'] }-->?tpl=<!--{$ary[spage]}-->&pid=<!--{$ary[id]}-->&sno=<!--{$a}-->&list=1&pg=1"<!--{/if}--> 						            			
+				            		<!--{if $get_ary[sno]==$a}-->class="active"<!--{/if}-->						           
+				            		<!--{if $ary[id]==21}-->id="nav-list-login"<!--{/if}-->						            
+				            		<!--{if $ary[id]==22}-->id="nav-list-regsiter"<!--{/if}--> >
+				            		<span data-title= "<!--{$ary[sname]}-->"><!--{$ary[sname]}--></span>
+				            		<!--{ffwbms ffa_sort_list,vtemp2,'pid='.$ary[id]}-->  <!--ffa_sort_list获得分类列表-->
+						    		<!--{if $ary[id]==15}--><i class="iconfont icon-xia" style="font-size: 12px;"></i><!--{/if}-->
+						    	</a>
+
+				                <!--二级栏目开始-->
+
+								   	<!--{ if $ary[id]==15}-->
+				                	<!--{$b=1}-->	
+				                	<ul class="dropdown-menu"> 
+							    	<!--{loop $vtemp2 $arry}-->
+								    	<li style="white-space: nowrap;">
+								    		<a href="?tpl=<!--{$arry[spage]}-->&pid=<!--{$ary[id]}-->&id=<!--{$arry[id]}-->&sno=<!--{$a}-->&list=<!--{$b}-->"><!--{$arry[sname]}-->								    			
+								    		</a>
+								    	</li>
+								    	
+								    <!--{$b ++}-->
+								    <!--{ /loop }-->
+								   
+								    </ul>
+								    <!--{ /if }--> 								
+				    		</li>
+			            <!--{$a++}-->
+			            <!--{ /loop }-->
+					</ul>
+				</div>						
+			</nav>
+		</div>
+	</div>
+</div>
+
+
+		<!--侧边消息条-->
+		<div class="news" id="news">
+			<div class="news-title">
+				在线咨询<button id="g" style="padding-left:40%;">&Chi;</button>
+			</div>
+			<ul class="news-qq">
+				<li>
+					<a href="tencent://message/?uin=121799830&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>121799830
+					</a>
+				</li>
+				<li>
+					<a href="tencent://message/?uin=407280793&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>407280793
+					</a>
+				</li>
+			</ul>
+		    <div class="news-tel">
+		    	<p style="padding-top: 10px;">
+		    		<i class="iconfont icon-dianhua" style="padding-right: 22%;"></i>联系电话
+	    		</p>
+		       <p style="font-size: 15px;">010-69557550</p>
+		    </div>
+		</div>
+		<div class="guild">
+			<ul>
+				<li style="background-color: #292929;">
+					
+					<a id="e">
+						<i class="iconfont icon-xinxi"></i>
+					</a>
+				</li>
+				<li style="background-color: #ea493c;">
+					<a> 
+				        <i class="iconfont icon-weibo"></i>
+			        </a>
+			    </li>
+			    <li style="background-color: #24b727">
+				    <a onclick="Show('fixed_weixin')">
+				        <i class="iconfont icon-shouji"></i>
+			        </a>
+			    </li>
+			    <li style="display: none;background-color: #292929;" id="top">
+					<a>
+				       <i class="iconfont icon-shang"></i>
+			        </a>
+			    </li>
+			</ul>
+		</div>		
+		<!--全屏二维码-->
+		<div class="fixed" id="fixed_weixin" onclick="Close('fixed_weixin')">
+			<div class="fixed-container">
+				<div id="qrcode">
+					<canvas width="220" height="220" style="display: none;"></canvas>
+					<img src="<!--{$langset_ary[QRcode]}-->" style="display: block;">
+				</div>
+				<p style="text-align: center;">扫描二维码分享到微信</p>
+			</div>
+		</div>

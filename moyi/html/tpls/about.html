@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+		<link rel="stylesheet" type="text/css" href="css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/about.css"/> 
+        <script src="js/wow.min.js"></script>
+	    <script src="js/jquery-1.11.0.min.js"></script>		    
+	    <script src="js/iconfont.js"></script>
+	    <script src="js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="js/bootsnav.js"></script>
+	    <script src="js/chanping.js"></script>
+	</head>
+	<body>	
+		<!--导航-->				
+		<div class="demo">
+			<div class="row" style="margin-right: 0px;">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default navbar-mobile bootsnav" id="header" style="height: 90px;">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="top: 15px;">
+								<span class="sr-only">切换导航</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logo" id="logo" style="margin-top: 10px;">
+								<a href="index.html" class="navbar-brand" style="padding: 0px 15px;">
+									<div class="navbar-left">
+										<img width="60%" style="margin: auto;" src="images/logo.png">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse navbar-right nav-list" id="example-navbar-collapse" >
+							<ul class="nav navbar-nav nav-menu clearfix" data-in="fadeInDown" data-out="fadeOutUp">
+								<li >
+									<a href="index.html"><span data-title= "首页">首页</span></a>
+								</li>
+								<li>
+									<a href="chanping.html">
+										<span data-title= "产品">产品</span>										
+									</a>									
+								</li>
+								<li>
+									<a href="anli.html">
+										<span data-title= "案例">案例</span>									
+									</a>									
+								</li>
+								<li>
+									<a href="jiage.html">
+										<span data-title= "价格">价格</span>
+									</a>
+								</li>
+								<li class="dropdown">
+									<a  class="active" >
+										<span data-title= "关于">关于</span>
+										<i class="iconfont icon-xia" style="font-size: 12px;"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li style="white-space: nowrap;">
+											<a href="about.html">什么是Uemo</a>
+										</li>
+										<li style="white-space: nowrap;">
+											<a href="team.html">团队</a>
+										</li>
+										<li style="white-space: nowrap;">
+											<a href="function.html">功能</a>
+										</li>										
+									</ul>
+								</li>
+								<li>
+									<a href="help.html"><span data-title= "帮助">帮助</span></a>
+								</li>
+								<li>
+									<a href="add.html" id="nav-list-login"><span  data-title= "加盟代理" >加盟代理</span></a>
+								</li>
+								<li>
+									<a href="use.html" id="nav-list-regsiter"><span  data-title= "申请试用" >申请试用</span></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!--侧边消息条-->
+		<div class="news" id="news">
+			<div class="news-title">
+				在线咨询<button id="g" style="padding-left:40%;">&Chi;</button>
+			</div>
+			<ul class="news-qq">
+				<li>
+					<a href="tencent://message/?uin=121799830&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>121799830
+					</a>
+				</li>
+				<li>
+					<a href="tencent://message/?uin=407280793&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>407280793
+					</a>
+				</li>
+			</ul>
+		    <div class="news-tel">
+		    	<p style="padding-top: 10px;">
+		    		<i class="iconfont icon-dianhua" style="padding-right: 22%;"></i>联系电话
+	    		</p>
+		       <p style="font-size: 15px;">010-69557550</p>
+		    </div>
+		</div>
+		<div class="guild">
+			<ul>
+				<li style="background-color: #292929;">
+					<a id="e">
+						<i class="iconfont icon-xinxi"></i>
+					</a>
+				</li>
+				<li style="background-color: #ea493c;">
+					<a>
+				        <i class="iconfont icon-weibo"></i>
+			        </a>
+			    </li>
+			    <li style="background-color: #24b727">
+				    <a onclick="Show('fixed_weixin')">
+				        <i class="iconfont icon-shouji"></i>
+			        </a>
+			    </li>
+			    <li style="display: none;background-color: #292929;" id="top">
+					<a>
+				       <i class="iconfont icon-shang"></i>
+			        </a>
+			    </li>
+			</ul>
+		</div>		
+		<!--全屏二维码-->
+		<div class="fixed" id="fixed_weixin" onclick="Close('fixed_weixin')">
+			<div class="fixed-container">
+				<div id="qrcode">
+					<canvas width="220" height="220" style="display: none;"></canvas>
+					<img src="images/094455805.png" style="display: block;">
+				</div>
+				<p style="text-align: center;">扫描二维码分享到微信</p>
+			</div>
+		</div>
+		
+		<!--内容-->
+		<div class="container">
+			<div class="a"></div>
+			<div class="header">
+				<p style="font-family:'微软雅黑'; font-size: 22px;">什么是UEmo</p>
+				<p style="font-family:'微软雅黑'; font-size: 14px;">About Us</p>
+			</div>
+			<div class="content">
+				<div class="content-product" style="padding-top: 2%;">
+					<div class="content-product-img col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<img src="images/gy1.png">
+					</div>
+					<div class="content-product-text col-xs-12 col-sm-12 col-md-7 col-lg-7">
+						<span style="color: rgb(63, 63, 63);font-family: '微软雅黑';">
+					      <strong>
+						     <span style="font-size: 16px;">我们的产品与优势</span>
+					      </strong>
+				        </span>
+				
+				        <p style="font-size: 13px;">UEmo（魔艺）极速建站是优艺客旗下产品。<br><br>我们拥有10几年的高端企业网站定制服务，曾服务过：
+					      <span style="color: rgb(12, 12, 12);"><strong>海尔</strong></span>、
+					      <span style="color: rgb(12, 12, 12);"><strong>联想</strong></span>、
+					      <span style="color: rgb(12, 12, 12);"><strong>北京电通</strong></span>、
+	                      <span style="color: rgb(12, 12, 12);"><strong>BIAD</strong></span>、
+					      <span style="color: rgb(12, 12, 12);"><strong>雅虎</strong></span>、
+					      <strong><span style="color: rgb(12, 12, 12);">凤凰中心</span></strong>、
+					      <span style="color: rgb(12, 12, 12);"><strong>民生银行</strong></span>等尽500多家高端企业用户。<br><br>
+					      <strong>【UEmo极速建站】</strong>解决了
+					      <a target="_blank" href="http://www.uemo.net/news/post/267/">响应式网站</a>
+					                代码冗余、设计局限、手机体验差等问题。拥有PC+手机站同数据、同网址，但不同体验的终端行为。 让企业在极短的时间内，只花费一套模板的价格，却得到如定制般的高逼格公司网站，且随着UEmo产品功能、设计、体验的不断迭代及优化，您的
+					      <a target="_blank" href="http://www.uemo.net/page/6170/">网站功能</a>及体验也将同步升级。第二年续费还可选择新的产品进行切换...
+				        </p>
+				        <p><br></p>
+				        <span style="color: rgb(63, 63, 63);font-family: '微软雅黑'; font-size: 16px;"><strong>我们的用户</strong></span>
+				        <p>所有对官网有一定追求的企业及个人。</p><br><br>
+				        <p>UEmo真正从企业用户角度出发，开发出自定义导航及页面、首页模块可显示/隐藏、拖拽排序、视差动效等功能，并同步生成手机站，也可绑定微信公众账号。UEmo产品研发阶段中，在零推广的情况下，已有上百家付费用户使用，并得到了极高的用户满意度。截止到目前，已有80余家企业伙伴希望得到该产品的代理权或战略合作。
+				        </p>
+				        <p><br></p>
+					</div>
+				    <div class="content-product-footer">
+				    	<p><strong><span style="color: rgb(63, 63, 63);font-family: '微软雅黑'; font-size: 16px;">与我们相似的产品</span></strong></p>
+				    	<p style="font-size: 13px;">目前市面上的同类型产品的问题<br></p>
+				    	<p><br></p>
+				    	<p style="font-size: 13px;">1-定制化的网站：价格高，周期长，掌控难。<br>2-传统模板网站：品质低，体验差，扩展难。</p>
+				    	<p><br></p>
+				    </div>
+				    <p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				</div>
+			    <div class="content-us">
+			    	<div class="content-us-text">
+			    		<p style="text-align: center;color: rgb(12, 12, 12); font-size: 20px;">我们是谁？</p>
+			    		<p style="text-align: center;color: rgb(165, 165, 165); font-size: 14px;">WHO WE ARE<br></p>
+			    		<p><br></p>
+			    		<p style="text-align: center;font-size: 12px; font-family: '微软雅黑';color:#959595;">
+			    			2008年成立
+			    			<a href="member.html" target="_blank" >韩雪冬</a>
+			    			网页设计工作室
+			    				<span style="color: rgb(165, 165, 165); font-size: 16px; font-family: 宋体,SimSun;">----></span>
+			    			2012年成立北京
+			    			<a href="http://www.uelike.com" target="_blank" title="优艺客uelike">优艺客</a>
+			    			文化传播有限公司		    			    
+			    			    <span style="color: rgb(165, 165, 165); font-size: 16px; font-family: 宋体,SimSun;">----></span>
+			    			2014年创办UE设计师交流平台
+			    			    <span style="color: rgb(165, 165, 165); font-size: 16px; font-family: 宋体,SimSun;">----></span>
+			    			2015年创办魔艺（UEmo）极速建站系统
+			    		</p>
+			    		<p><br></p>
+			    		<p style="padding: 2% 0;">
+			    			<img style="margin: 0 auto; width: 80%;" src="images/gy2.png";>
+			    		</p>
+			    		<p style="text-align: center;font-family: 微软雅黑;font-size: 13px;">
+			    			优艺客全力打造UEMO，让更多的用户可以拥有一套低成本、高品质的网站。
+			    		</p>
+			    		<div class="content-us-text-middle clearfix">
+			    			<div class="content-us-text-left col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					    		<p>
+					    			<img style="width: 80%;margin: auto;" src="images/gy3.png">
+					    		</p>
+			    			</div>
+				    		<div class="content-us-text-right col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				    			<p ><strong><span style="font-size: 20px; color: rgb(38, 38, 38);">最高奖项</span></strong>
+				    				<br><br>
+				    				2012年曾被Awwwards设计评审机构评为<strong><span style="color: rgb(38, 38, 38);">全球最佳CSS网站</span></strong>
+				    				！（中国仅此一家）
+				    			</p>
+				    		    <p >由来自8个国家的国际评审团评分，优艺客团队获此次评审的最高奖项，并颁发证书。</p>
+				    		    <p >作品刊登在《 The 365 Best Css Websites Around The World》一书中。</p>
+				    		</div>
+			    		</div>
+			    		<div class="content-us-text-footer">
+			    			<p><strong><span style="font-size: 16px;color: rgb(38, 38, 38);">其他荣誉(国际)</span></strong></p>
+			    			<p><br></p>
+			    			<p><strong><span style="color: rgb(12, 12, 12);">欧美CSS设计奖获奖作品：</span></strong> 
+			    				cssdesignawards欧美CSS画廊设计奖项首页顶部展示1月27日的最佳设计作品</p>
+			    			<p><strong><span style="color: rgb(12, 12, 12);">世界著名设计杂志NWP：</span></strong>
+			    				推荐网站 世界权威电子设计杂志 NEWWEBPICK <br></p>
+			    			<p><strong><span style="color: rgb(12, 12, 12);">新西兰GOUW设计师平台：</span></strong>
+			    				Graphic orgasm Ultimate WebportalGOUW.NU &nbsp;Site Design Links and Graphics</p>
+			    			<p><strong><span style="color: rgb(12, 12, 12);">美国Tympanus：</span></strong>
+			    				选出35个杰出视觉体验网站，优艺客被选其中（中国站仅此一个）</p>
+			    			<p><strong><span style="color: rgb(12, 12, 12);">意大利全国工业设计协会：</span></strong>
+			    				优艺客作品被收录到意大利全国工业设计协会从书中</p>
+			    			<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+			    			<p><br></p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="content-request">
+			    	<p><strong><span style="font-size: 22px;color: rgb(38, 38, 38);">受邀<br></strong></span></p>
+			    	<p><br></p>
+			    	<p><strong><span style="color:#262626;">2010年</span></strong>&nbsp;优艺客受邀请到“<strong>中国移动飞信</strong>"做设计分享<br></p>
+			    	<p><strong><span style="color:#262626;">2012年</span></strong>&nbsp;优艺客受邀请到“<strong>创新工场</strong>”做设计分享</p>
+			    	<p><strong><span style="color:#262626;">2013年</span></strong>&nbsp;优艺客受邀请到“<strong>美团</strong>”给美团UED做设计分享</p>
+			    	<p><strong><span style="color:#262626;">2015年</span></strong>&nbsp;优艺客受邀请到“<strong>中美设计顾问机构</strong>”做设计分享</p>
+			    	<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+			    </div>
+			    <div class="content-other">
+			    	<p><strong><span style="font-size: 22px;color: rgb(38, 38, 38);">其他<br></strong></span></p>
+			    	<p><br></p>
+			    	<p><span style="color: rgb(38, 38, 38);">2014年</span> 优艺客团队创办UE设计师交流平台（UEhtml）为帮助设计师学习交流、并先后邀请 <br></p>
+			    	<p> <strong>美团</strong>UED设计总监 薛靖、
+			    		<strong>360</strong>设计总监季熙（MorchaDesign）、
+			    		<strong>百度</strong>设计总监冯铁、
+			    		<strong>夹克的虾</strong>创世人（前百度高级设计师）夹克、Dribbble华人帮发起人小火、
+			    		<strong>360</strong>高级设计师时昕、梦兮设计学院创始人任星星、
+			    		<strong>新浪</strong>高级设计师高勐 、
+			    		<strong>锤子</strong>高级设计师欧阳念念、深圳CLH创始人杨华、重庆曼妙视觉创世人曾凯、爸爸去哪儿设计师罗磊等等做免费设计分享。<br>
+			    	</p>
+			    	<p><br><br></p>
+			    	<p>我们用10年的建站经验，打造出适合中小企业的高端企业网站系统-UEMO，精致的设计，人性化的后台，让UEMO成为您建站的首选。创始人：国内知名设计师韩雪冬<br></p>
+			    	<p><br><br></p>
+			    	<p>
+			    		<img src="images/gy4.png" width="100%">
+			    	</p>
+			    </div>
+			</div>
+	    </div>
+	    <!--页脚-->
+		<div class="foot">
+			<div style="width: 80%;margin: auto;">
+		      	<p style="text-align: center; padding-top: 1%;">
+		      		<span style="font-family: '微软雅黑';font-size: 10px; color:#737373;">
+		      	   		COPYRIGHT (©) 2017  魔艺极速建站 - UEMO企业版- 优艺客旗下品牌 - 网站模板 - 智能建站 - 企业建站. 
+		         	</span>	
+			      	<a style="color: #737373; font-size: 10px;margin-left: 10px;">京ICP备12019481号-5</a>
+			      	<span style=" color:#737373; font-size: 10px; display: inline-block;">
+			      		技术支持
+			      	</span>
+			      	<a href="http://www.vikihui.com" target="_blank" style="display: inline-block;">
+		      			<img src="images/094351995.png" width="50%">
+		      		</a>
+		      	</p>
+	      	</div>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+        <link rel="stylesheet" type="text/css" href="css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/member.css"/> 
+        <script src="js/wow.min.js"></script>
+	    <script src="js/jquery-1.11.0.min.js"></script>	    
+	    <script src="js/iconfont.js"></script>
+	    <script src="js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="js/bootsnav.js"></script>
+	    <script src="js/chanping.js"></script>
+	</head>
+	<body>	
+		<!--导航-->				
+		<div class="demo">
+			<div class="row" style="margin-right: 0px;">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default navbar-mobile bootsnav" id="header" style="height: 90px;">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="top: 15px;">
+								<span class="sr-only">切换导航</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logo" id="logo" style="margin-top: 10px;">
+								<a href="index.html" class="navbar-brand" style="padding: 0px 15px;">
+									<div class="navbar-left">
+										<img width="60%" style="margin: auto;" src="images/logo.png">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse navbar-right nav-list" id="example-navbar-collapse" >
+							<ul class="nav navbar-nav nav-menu clearfix" data-in="fadeInDown" data-out="fadeOutUp">
+								<li >
+									<a href="index.html"><span data-title= "首页">首页</span></a>
+								</li>
+								<li>
+									<a href="chanping.html">
+										<span data-title= "产品">产品</span>										
+									</a>									
+								</li>
+								<li>
+									<a href="anli.html">
+										<span data-title= "案例">案例</span>									
+									</a>									
+								</li>
+								<li>
+									<a href="jiage.html">
+										<span data-title= "价格">价格</span>
+									</a>
+								</li>
+								<li class="dropdown">
+									<a  class="active" >
+										<span data-title= "关于">关于</span>
+										<i class="iconfont icon-xia" style="font-size: 12px;"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li style="white-space: nowrap;">
+											<a href="about.html">什么是Uemo</a>
+										</li>
+										<li style="white-space: nowrap;">
+											<a href="team.html">团队</a>
+										</li>
+										<li style="white-space: nowrap;">
+											<a href="function.html">功能</a>
+										</li>										
+									</ul>
+								</li>
+								<li>
+									<a href="help.html"><span data-title= "帮助">帮助</span></a>
+								</li>
+								<li>
+									<a href="add.html" id="nav-list-login"><span  data-title= "加盟代理" >加盟代理</span></a>
+								</li>
+								<li>
+									<a href="use.html" id="nav-list-regsiter"><span  data-title= "申请试用" >申请试用</span></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!--侧边消息条-->
+		<div class="news" id="news">
+			<div class="news-title">
+				在线咨询<button id="g" style="padding-left:40%;">&Chi;</button>
+			</div>
+			<ul class="news-qq">
+				<li>
+					<a href="tencent://message/?uin=121799830&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>121799830
+					</a>
+				</li>
+				<li>
+					<a href="tencent://message/?uin=407280793&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>407280793
+					</a>
+				</li>
+			</ul>
+		    <div class="news-tel">
+		    	<p style="padding-top: 10px;">
+		    		<i class="iconfont icon-dianhua" style="padding-right: 22%;"></i>联系电话
+	    		</p>
+		       <p style="font-size: 15px;">010-69557550</p>
+		    </div>
+		</div>
+		<div class="guild">
+			<ul>
+				<li style="background-color: #292929;">
+					<a id="e">
+						<i class="iconfont icon-xinxi"></i>
+					</a>
+				</li>
+				<li style="background-color: #ea493c;">
+					<a>
+				        <i class="iconfont icon-weibo"></i>
+			        </a>
+			    </li>
+			    <li style="background-color: #24b727">
+				    <a onclick="Show('fixed_weixin')">
+				        <i class="iconfont icon-shouji"></i>
+			        </a>
+			    </li>
+			    <li style="display: none;background-color: #292929;" id="top">
+					<a>
+				       <i class="iconfont icon-shang"></i>
+			        </a>
+			    </li>
+			</ul>
+		</div>		
+		<!--全屏二维码-->
+		<div class="fixed" id="fixed_weixin" onclick="Close('fixed_weixin')">
+			<div class="fixed-container">
+				<div id="qrcode">
+					<canvas width="220" height="220" style="display: none;"></canvas>
+					<img src="images/094455805.png" style="display: block;">
+				</div>
+				<p style="text-align: center;">扫描二维码分享到微信</p>
+			</div>
+		</div>
+
+		<!--介绍-->
+		<div class="a"></div>
+		<div class="container">
+		    <div class="title">
+			    <p style="font-family: '微软雅黑'; font-size: 20px; color:#000000;">韩雪冬(kaven)</p>
+			    <p >UEmo/UElike/UEhtml创始人</p>
+		    </div>
+		    <div class="content">
+		    	<div class="content-left col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		    		<img src="images/member1.jpg" >
+		    	</div>
+		    	<div class="content-right col-xs-12 col-sm-8 col-md-8 col-lg-8">
+		    		<p><span style="font-size: 16px; color: rgb(38, 38, 38);">职务</span></p>
+		    		<p>-&nbsp; 优艺客(UElike)创始人
+		    			<br>-&nbsp; UE设计交流平台(UEhtml)创始人
+		    		    <br>-&nbsp; 魔艺(UEmo)极速建站创始人
+		    		    <br>-&nbsp; 东皇乐事创始人
+		    		</p>
+		    		<p style="border-top:1px dotted  #d3d3d3; margin-top:20px; margin-bottom:0px;"><br></p>
+		    		<p><span style="font-size: 16px; color: rgb(38, 38, 38);">奖项</span></p>
+		    		<p>-&nbsp;第九届中国设计业青年百人榜获奖者并颁发证书
+		    			<br>-&nbsp;Adobe TOP领航者之一&nbsp; 并颁发证书
+		    			<br>-&nbsp;作品收录意大利全国工业设计协会丛书中
+		    			<br>-&nbsp;中国最大设计平台站酷颁发 - 设计10年成就奖<br>
+		    		</p>
+		    	    <p style="border-top:1px dotted  #d3d3d3; margin-top:20px; margin-bottom:0px;"><br></p>
+		    	    <p><span style="font-size: 16px; color: rgb(38, 38, 38);">荣誉(国际)</span><br></p>
+		    	    <p>欧美Awwwards： 2012年作品曾被Awwwards设计评审机构评为全球最佳CSS网站！
+		    	               （中国仅此一家）由来自8个国家的国际评审团评分，作品获此次评审的最高奖项，并颁发
+		    	    	<a target="_blank" href="http://moue.uemo.net/templates/upload/2/201608/1471031089420.png">证书</a>。
+		    	    	作品刊登在《 The 365 Best Css Websites Around The World》一书中。
+		    	    </p>
+		    	    <p>欧美CSS设计奖获奖作品： cssdesignawards欧美CSS画廊设计奖项首页顶部展示1月27日的最佳设计作品</p>
+		    	    <p>世界著名设计杂志NWP：推荐网站 世界权威电子设计杂志 NEWWEBPICK / 案例被收录NEWWEBPICK电子杂志 （第29期）</p>
+		    	    <p>新西兰GOUW设计师平台：Graphic orgasm Ultimate WebportalGOUW.NU &nbsp;Site Design Links and Graphics</p>
+		    	    <p>美国Tympanus：选出35个杰出视觉体验网站，作品被选其中（中国站仅此一个）</p>
+		    	    <p style="border-top:1px dotted  #d3d3d3; margin-top:20px; margin-bottom:0px;"><br></p>
+		    	    <p><span style="font-size: 16px; color: rgb(38, 38, 38);">评委</span>
+		    	    	<br>-&nbsp;站酷主办 曲美家具电脑桌面壁纸设计活动 设计评委
+		    	    	<br>-&nbsp;2014-2015中国网页设计联盟 设计评委
+		    	        <br>-&nbsp;2015-2016中国网页设计联盟 设计评委
+		    	        <br>-&nbsp;2016-2017中国网页设计联盟 设计评委
+		    	    </p>
+		    	    <p style="border-top:1px dotted  #d3d3d3; margin-top:20px; margin-bottom:0px;"><br></p>
+		    	    <p><span style="font-size: 16px; color: rgb(38, 38, 38);">出版</span>
+		    	    	<br>-&nbsp;站酷主办 出版资深设计师的Photoshop创意课丛书人员之一</p>
+		    	    <p style="border-top:1px dotted  #d3d3d3; margin-top:30px; margin-bottom:0px;"><br></p>
+		    	    <p><span style="font-size: 16px; color: rgb(38, 38, 38);">受邀</span>
+		    	    	<br>-&nbsp;2010年 受邀请 到“中国移动飞信"做设计分享
+		    	        <br>-&nbsp;2012年 受邀请 到“创新工场”做设计分享
+		    	        <br>-&nbsp;2013年 受邀请 到“美团”给美团UED做设计分享
+		    	        <br>-&nbsp;2015年 受邀请 到“中美设计顾问机构”做设计分享
+		    	    <p>
+		    	    <p style="border-top:1px dotted  #d3d3d3; margin-top:20px; margin-bottom:0px;"><br></p>
+		    	    <p><span style="font-size: 16px; color: rgb(38, 38, 38);">讲座/专访</span>
+		    	    	<br>-&nbsp;曾星狮网页设计师高级班讲师
+		    	        <br>-&nbsp;站酷专访-轻视觉 重体验
+		    	        <br>-&nbsp;站酷设计公开课：听韩雪冬谈网站设计——餐厅网站设计案例分享</p>
+		    	    <p style="border-top:1px dotted  #d3d3d3; margin-top:20px; margin-bottom:0px;"><br></p>
+		    	    <p><span style="font-size: 16px; color: rgb(38, 38, 38);">其他</span>
+		    	    	<br>-&nbsp;中美设计顾问-担任设计指导顾问</br>
+		    	    </p>
+		    	    <p style="border-top: 1px dotted rgb(211, 211, 211); margin-top: 20px; margin-bottom: 0px;"><br></p>
+		    	    <p><span style="font-size: 16px; color: rgb(38, 38, 38);">服务客户</span></p>
+		    	    <p>海尔|联想|雅虎|北京电通|凤凰国际传媒中心|康师傅|民生银行|搜狐|新浪|智联招聘|中国妇联|北京电视台|benefit贝玲妃|AUPRES欧珀莱|北京建筑设计研究院|韩国D2公司...</p>
+		    	    <p style="border-top: 1px dotted rgb(211, 211, 211); margin-top: 20px; margin-bottom: 0px;"><br></p>
+		    	    <p><span style="font-size: 16px; color: rgb(38, 38, 38);">人生格言<br></span></p>
+		    	    <p>坚持不一定成功，但放弃一定失败。</p>
+		    	</div>
+		    </div>		    
+		</div>
+		<!--页脚-->
+		<div class="foot">
+			<div style="width: 80%;margin: auto;">
+		      	<p style="text-align: center; padding-top: 1%;">
+		      		<span style="font-family: '微软雅黑';font-size: 10px; color:#737373;">
+		      	   		COPYRIGHT (©) 2017  魔艺极速建站 - UEMO企业版- 优艺客旗下品牌 - 网站模板 - 智能建站 - 企业建站. 
+		         	</span>	
+			      	<a style="color: #737373; font-size: 10px;margin-left: 10px;">京ICP备12019481号-5</a>
+			      	<span style=" color:#737373; font-size: 10px; display: inline-block;">
+			      		技术支持
+			      	</span>
+			      	<a href="http://www.vikihui.com" target="_blank" style="display: inline-block;">
+		      			<img src="images/094351995.png" width="50%">
+		      		</a>
+		      	</p>
+	      	</div>
+        </div>
+	</body>
+</html>

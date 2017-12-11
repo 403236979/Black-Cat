@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+        <link rel="stylesheet" type="text/css" href="css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/function.css"/> 
+        <script src="js/wow.min.js"></script>
+	    <script src="js/jquery-1.11.0.min.js"></script>	   
+	    <script src="js/iconfont.js"></script>
+	    <script src="js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="js/bootsnav.js"></script>
+	    <script src="js/chanping.js"></script>	
+	</head>
+	<body>		
+		<!--导航-->				
+		<div class="demo">
+			<div class="row" style="margin-right: 0px;">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default navbar-mobile bootsnav" id="header" style="height: 90px;">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" style="top: 15px;">
+								<span class="sr-only">切换导航</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logo" id="logo" style="margin-top: 10px;">
+								<a href="index.html" class="navbar-brand" style="padding: 0px 15px;">
+									<div class="navbar-left">
+										<img width="60%" style="margin: auto;" src="images/logo.png">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse navbar-right nav-list" id="example-navbar-collapse" >
+							<ul class="nav navbar-nav nav-menu clearfix" data-in="fadeInDown" data-out="fadeOutUp">
+								<li >
+									<a href="index.html"><span data-title= "首页">首页</span></a>
+								</li>
+								<li>
+									<a href="chanping.html">
+										<span data-title= "产品">产品</span>										
+									</a>									
+								</li>
+								<li>
+									<a href="anli.html">
+										<span data-title= "案例">案例</span>									
+									</a>									
+								</li>
+								<li>
+									<a href="jiage.html">
+										<span data-title= "价格">价格</span>
+									</a>
+								</li>
+								<li class="dropdown">
+									<a  class="active" >
+										<span data-title= "关于">关于</span>
+										<i class="iconfont icon-xia" style="font-size: 12px;"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li style="white-space: nowrap;">
+											<a href="about.html">什么是Uemo</a>
+										</li>
+										<li style="white-space: nowrap;">
+											<a href="team.html">团队</a>
+										</li>
+										<li style="white-space: nowrap;">
+											<a href="function.html">功能</a>
+										</li>										
+									</ul>
+								</li>
+								<li>
+									<a href="help.html"><span data-title= "帮助">帮助</span></a>
+								</li>
+								<li>
+									<a href="add.html" id="nav-list-login"><span  data-title= "加盟代理" >加盟代理</span></a>
+								</li>
+								<li>
+									<a href="use.html" id="nav-list-regsiter"><span  data-title= "申请试用" >申请试用</span></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!--侧边消息条-->
+		<div class="news" id="news">
+			<div class="news-title">
+				在线咨询<button id="g" style="padding-left:40%;">&Chi;</button>
+			</div>
+			<ul class="news-qq">
+				<li>
+					<a href="tencent://message/?uin=121799830&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>121799830
+					</a>
+				</li>
+				<li>
+					<a href="tencent://message/?uin=407280793&amp;Site=uelike&amp;Menu=yes" style=" color: #333;">
+						<i class="iconfont icon-qq" style="padding-right: 10%;"></i>407280793
+					</a>
+				</li>
+			</ul>
+		    <div class="news-tel">
+		    	<p style="padding-top: 10px;">
+		    		<i class="iconfont icon-dianhua" style="padding-right: 22%;"></i>联系电话
+	    		</p>
+		       <p style="font-size: 15px;">010-69557550</p>
+		    </div>
+		</div>
+		<div class="guild">
+			<ul>
+				<li style="background-color: #292929;">
+					<a id="e">
+						<i class="iconfont icon-xinxi"></i>
+					</a>
+				</li>
+				<li style="background-color: #ea493c;">
+					<a>
+				        <i class="iconfont icon-weibo"></i>
+			        </a>
+			    </li>
+			    <li style="background-color: #24b727">
+				    <a onclick="Show('fixed_weixin')">
+				        <i class="iconfont icon-shouji"></i>
+			        </a>
+			    </li>
+			    <li style="display: none;background-color: #292929;" id="top">
+					<a>
+				       <i class="iconfont icon-shang"></i>
+			        </a>
+			    </li>
+			</ul>
+		</div>		
+		<!--全屏二维码-->
+		<div class="fixed" id="fixed_weixin" onclick="Close('fixed_weixin')">
+			<div class="fixed-container">
+				<div id="qrcode">
+					<canvas width="220" height="220" style="display: none;"></canvas>
+					<img src="images/094455805.png" style="display: block;">
+				</div>
+				<p style="text-align: center;">扫描二维码分享到微信</p>
+			</div>
+		</div>
+		<!--功能-->
+		<div class="a"></div>
+		<div class="header">			
+			<p style="font-family:'微软雅黑'; font-size: 24px;">功能</p>
+			<p style="font-family:'微软雅黑'; font-size: 14px; color:#9D9D9D;margin-top: 10px;">UEMO极速建站包括</p>
+		</div>
+		<div class="content">
+			<div class="content-text">
+				<p><br></p>
+				<p style="text-align: left;">预算低、周期短、需求高，怎么可能？UEmo让一切不可能变成可能！魔艺（UEmo）极速建站让企业或个人拥有：交互、设计及体验于一身的高逼格网站。后台操作使用说明</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;"><br></p>
+				<p><img src="images/gn1.png"></p>
+			</div>
+			<div class="content-list">
+				<p >
+					<img src="images/gn2.png">
+				    <span><strong>首页版块</strong>—— 首页除幻灯，其它版块可根据企业需求拖拽排序，并隐藏模块！ <a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn3.png">
+				    <span><strong>幻灯模块</strong>——自行设置幻灯高度或全屏，自由调试幻灯播放时间、排序、及播放形式。如（左右切换、渐隐渐现<a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn4.png">
+				    <span><strong>首页版块</strong>—— 首页除幻灯，其它版块可根据企业需求拖拽排序，并隐藏模块！ <a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn5.png">
+				    <span><strong>幻灯模块</strong>——自行设置幻灯高度或全屏，自由调试幻灯播放时间、排序、及播放形式。如（左右切换、渐隐渐现<a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn6.png">
+				    <span><strong>首页版块</strong>—— 首页除幻灯，其它版块可根据企业需求拖拽排序，并隐藏模块！ <a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn7.png">
+				    <span><strong>幻灯模块</strong>——自行设置幻灯高度或全屏，自由调试幻灯播放时间、排序、及播放形式。如（左右切换、渐隐渐现<a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn8.png">
+				    <span><strong>首页版块</strong>—— 首页除幻灯，其它版块可根据企业需求拖拽排序，并隐藏模块！ <a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn9.png">
+				    <span><strong>幻灯模块</strong>——自行设置幻灯高度或全屏，自由调试幻灯播放时间、排序、及播放形式。如（左右切换、渐隐渐现<a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn10.png">
+				    <span><strong>首页版块</strong>—— 首页除幻灯，其它版块可根据企业需求拖拽排序，并隐藏模块！ <a>视频教程</a></span>
+				</p>
+				<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				<p >
+					<img src="images/gn11.png">
+				    <span><strong>幻灯模块</strong>——自行设置幻灯高度或全屏，自由调试幻灯播放时间、排序、及播放形式。如（左右切换、渐隐渐现<a>视频教程</a></span>
+				</p>
+				<div class="content-list-link">
+				<p >
+					<img src="images/gn12.png" >
+				    <span><strong>嵌入视频</strong>——<a>视频地址  http://cdn.uehtml.com/shipin/qrsp.mp4</a></span>
+				</p>
+				</div>
+			</div>
+		</div>
+		<!--页脚-->
+		<div class="foot">
+			<div style="width: 80%;margin: auto;">
+		      	<p style="text-align: center; padding-top: 1%;">
+		      		<span style="font-family: '微软雅黑';font-size: 10px; color:#737373;">
+		      	   		COPYRIGHT (©) 2017  魔艺极速建站 - UEMO企业版- 优艺客旗下品牌 - 网站模板 - 智能建站 - 企业建站. 
+		         	</span>	
+			      	<a style="color: #737373; font-size: 10px;margin-left: 10px;">京ICP备12019481号-5</a>
+			      	<span style=" color:#737373; font-size: 10px; display: inline-block;">
+			      		技术支持
+			      	</span>
+			      	<a href="http://www.vikihui.com" target="_blank" style="display: inline-block;">
+		      			<img src="images/094351995.png" width="50%">
+		      		</a>
+		      	</p>
+	      	</div>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>UEMO DEMO - mo005_2232</title>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/chushihua.css"/>
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/iconfont.css"/>         
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/animate.min.css" />
+        <link rel="stylesheet" href="<!--{ $wset_ary['tpl_path'] }-->css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/bootsnav.css">
+	    <link href="<!--{ $wset_ary['tpl_path'] }-->css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<!--{ $wset_ary['tpl_path'] }-->css/about.css"/> 
+        <script src="<!--{ $wset_ary['tpl_path'] }-->js/wow.min.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/jquery-1.11.0.min.js"></script>		    
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/iconfont.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/bootstrap.min.js"></script>	
+	    <script type="text/javascript" src="<!--{ $wset_ary['tpl_path'] }-->js/bootsnav.js"></script>
+	    <script src="<!--{ $wset_ary['tpl_path'] }-->js/chanping.js"></script>
+	</head>
+	<body>	
+		<!--{include "head.htm"}-->
+			
+		<!--内容-->
+		<div class="container">
+			<div class="a"></div>
+			<!--{ffwbms ffa_art_pglist,vtemp,'pid=23'}--><!--获得文章分页列表-->           
+	        <!--{ffwbms ffa_art_value,arry,'id=32'}-->
+	        <!--{$time=substr($ary[scdt],0,10)}-->		        
+	        <div class="header">
+				<p style="font-family:'微软雅黑'; font-size: 22px;"><!--{$arry[atit]}--></p>
+				<p style="font-family:'微软雅黑'; font-size: 14px;"><!--{$arry[stit]}--></p>
+			</div>			
+			<div class="content">
+				<div class="content-product" style="padding-top: 2%;">
+					<div class="content-product-img col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<img src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][0][furl]}-->"/>
+					</div>
+					<div class="content-product-text col-xs-12 col-sm-12 col-md-7 col-lg-7">
+						<!--{$arry[atxt]}-->
+				        <p><br></p>
+					</div>
+					<!--{ffwbms ffa_art_pglist,vtemp,'pid=23'}--><!--获得文章分页列表-->           
+			        <!--{ffwbms ffa_art_value,arry,'id=34'}-->
+			        <!--{$time=substr($ary[scdt],0,10)}-->
+				    <div class="content-product-footer">
+				    	<!--{$arry[atxt]}-->
+				    	<p><br></p>
+				    </div>
+				    <p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+				</div>
+			    <div class="content-us">
+			    	<!--{ffwbms ffa_art_pglist,vtemp,'pid=23'}--><!--获得文章分页列表-->           
+			        <!--{ffwbms ffa_art_value,arry,'id=35'}-->
+			        <!--{$time=substr($ary[scdt],0,10)}-->
+			    	<div class="content-us-text">
+			    		<p style="text-align: center;color: rgb(12, 12, 12); font-size: 20px;"><!--{$arry[atit]}--></p>
+			    		<p style="text-align: center;color: rgb(165, 165, 165); font-size: 14px;"><!--{$arry[stit]}--><br></p>
+			    		<p><br></p>
+			    		<!--{$arry[atxt]}-->
+			    		<p><br></p>
+			    		<p style="padding: 2% 0;">
+			    			<img style="margin: 0 auto; width: 80%;" src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][0][furl]}-->"/>
+			    		</p>
+			    		<p style="text-align: center;font-family: 微软雅黑;font-size: 13px;">
+			    			优艺客全力打造UEMO，让更多的用户可以拥有一套低成本、高品质的网站。
+			    		</p>
+			    		<div class="content-us-text-middle clearfix">
+			    			<!--{ffwbms ffa_art_pglist,vtemp,'pid=23'}--><!--获得文章分页列表-->           
+					        <!--{ffwbms ffa_art_value,arry,'id=36'}-->
+					        <!--{$time=substr($ary[scdt],0,10)}-->
+			    			<div class="content-us-text-left col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					    		<p>
+					    			<img style="width: 80%;margin: auto;" src="<!--{ $wset_ary['upload_path']}--><!--{$arry[timgary][0][furl]}-->">
+					    		</p>
+			    			</div>
+				    		<div class="content-us-text-right col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				    			<!--{$arry[atxt]}-->
+				    		</div>
+			    		</div>
+			    		<!--{ffwbms ffa_art_pglist,vtemp,'pid=23'}--><!--获得文章分页列表-->           
+					        <!--{ffwbms ffa_art_value,arry,'id=37'}-->
+					        <!--{$time=substr($ary[scdt],0,10)}-->
+			    		<div class="content-us-text-footer">
+			    			<p><strong><span style="font-size: 16px;color: rgb(38, 38, 38);"><!--{$arry[atit]}--></span></strong></p>
+			    			<p><br></p>
+			    			<!--{$arry[atxt]}-->
+			    			<p><br></p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <!--{ffwbms ffa_art_pglist,vtemp,'pid=23'}--><!--获得文章分页列表-->           
+		        <!--{ffwbms ffa_art_value,arry,'id=38'}-->
+		        <!--{$time=substr($ary[scdt],0,10)}-->
+			    <div class="content-request">
+			    	<p><strong><span style="font-size: 22px;color: rgb(38, 38, 38);"><!--{$arry[atit]}--><br></strong></span></p>
+			    	<p><br></p>
+			    	<!--{$arry[atxt]}-->
+			    	<p style="border-top: 1px dotted #ADADAD; margin-top:10px;width: 100%;float: left;"><br></p>
+			    </div>
+			    <!--{ffwbms ffa_art_pglist,vtemp,'pid=23'}--><!--获得文章分页列表-->           
+		        <!--{ffwbms ffa_art_value,arry,'id=39'}-->
+		        <!--{$time=substr($ary[scdt],0,10)}-->
+			    <div class="content-other">
+			    	<p><strong><span style="font-size: 22px;color: rgb(38, 38, 38);"><!--{$arry[atit]}--><br></strong></span></p>
+			    	<p><br></p>
+			    	<!--{$arry[atxt]}-->
+			    	<p><br><br></p>
+			    	<p>
+			    		<img src="<!--{ $wset_ary['upload_path'] }--><!--{$arry[timgary][0][furl]}-->" width="100%">
+			    	</p>
+			    </div>
+			</div>
+	    </div>
+	    <!--页脚-->
+	    <!--{include "foot.htm"}-->
+	</body>
+</html>
