@@ -1,0 +1,26 @@
+header{
+    background:#f3f3f3;
+    box-shadow:0 1px 2px 0 rgba(202,202,202,0.50), 0 4px 5px 0 rgba(206,206,206,0.50);
+    width:100%;
+    min-width:1440px;
+    height:60px;
+}
+.banner{
+    opacity:0.45;
+    background:#000000;
+    width:100%;
+    min-width:1440px;
+    height:840px;
+}
+.content{
+    background:white;
+    width:100%;
+    min-width:1440px;
+    height:590px;
+}
+footer{
+    background:#2f2f2f;
+    width:100%;
+    min-width:1440px;
+    height:228px;
+}

@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import { Router, Route, Redirect, IndexRoute } from 'react-router';
-import { HashRouter } from 'react-router-dom'
-import Index from '../Component/Index.jsx';
-/*=================
-   router.jsx 组件
-  专门用来管理路由的
-==================*/
+import { HashRouter, BrowserRouter, Switch } from 'react-router-dom'
+import Home from '../Component/common/home/Index.jsx';
 
 const RouteConfig =(
-  <HashRouter>
-      <Route path='/' component={Index}/>
-   </HashRouter>
+  <BrowserRouter>
+      <Switch>
+        <Route path='/' component={Home}/>
+      </Switch>
+   </BrowserRouter>
 );
 export default RouteConfig
