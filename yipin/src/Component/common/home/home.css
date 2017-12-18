@@ -1,0 +1,272 @@
+.homewrap{
+    background: #fff;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background:#f3f3f3;
+    width:100%;
+    min-width:1440px;
+    height:60px;
+}
+.logo{
+    float: left;
+    width:98px;
+    height:32px;
+    margin: 14px 0;
+    margin-left: 17%;
+    background: url("./img/Group.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.btnbox{
+    float: right;
+    margin: 14px 0;
+    margin-right: 17%;
+    font-size:16px;
+    line-height: 32px;
+}
+.btnbox .headerBtn:first-child{
+    margin-right: 18px;
+}
+.headerBtn{
+    float: left;
+    border:1px solid rgba(0,0,0,0.87);
+    border-radius:2px;
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    color:#37474f;
+    text-align:center;
+    cursor: pointer;
+}
+.headerBtn:hover{
+    float: left;
+    background:rgba(0,0,0,0.87);
+    border:1px solid rgba(0,0,0,0.87);
+    border-radius:2px;
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    color:#FFFFFF;
+    text-align:center;
+    cursor: pointer;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-width:1440px;
+    height:840px;
+    margin: 0 auto;
+    background:url("./img/banner.png") no-repeat;
+    background-size:auto 100%;
+    background-attachment: fixed;
+    background-position: top;
+}
+.dark{
+    height:100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+.banBox{
+    position: absolute;
+    min-width: 1200px;
+    width: 100%;
+    height: 360px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+.banBox p:first-child{
+    font-size: 64px;
+    color: #ffffff;
+    letter-spacing: 2.69px;
+    font-weight: 300;
+}
+.freebtn{
+    margin-top: 99px;
+    display: inline-block;
+    font-size:20px;
+    color:#fff;
+    border-radius:2px;
+    width:170px;
+    height:46px;
+    line-height: 46px;
+    cursor: pointer;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.freebtn:hover {
+    color: #fff;
+}
+
+.freebtn::after,.freebtn::before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.freebtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    z-index: -1;
+    box-shadow: inset 0 0 0 35px #0f9d58;
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+    transform: scale3d(0.9, 0.9, 1);
+    -webkit-transition: box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.freebtn:hover::before {
+    box-shadow: inset 0 0 0 2px #fff;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+.content{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    min-width: 1440px;
+}
+.content h2{
+    margin-top: 103px;
+    font-size:48px;
+    color:#4a4a4a;
+    letter-spacing:1.85px;
+    text-align:center;
+}
+.intrModule{
+    display: flex;
+    justify-content:space-around;
+    margin: 70px auto 0;
+    width: 1200px;
+
+}
+.moduleBox{
+    width: 286px;
+}
+.moduleBox h2{
+    margin-top: 31px;
+    font-size:30px;
+    color:#4a4a4a;
+    letter-spacing:1.15px;
+    text-align:center;
+}
+.moduleBox p{
+    margin-top: 36px;
+    font-size:16px;
+    color:#4a4a4a;
+    letter-spacing:0.62px;
+    line-height:24px;
+    text-align:center;
+}
+.moduleImg01{
+    width: 93px;
+    height: 93px;
+    margin:0 auto;
+    background: url("./img/mianban.png") no-repeat center;
+    background-size: 100%;
+}
+.moduleImg02{
+    width: 93px;
+    height: 93px;
+    margin:0 auto;
+    background: url("./img/rencai.png") no-repeat center;
+    background-size: 100%;
+}
+.moduleImg03{
+    width: 93px;
+    height: 93px;
+    margin:0 auto;
+    background: url("./img/zhuanjia.png") no-repeat center;
+    background-size: 100%;
+}
+.bgblack{
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+}
+.footer{
+    display: flex;
+    position: relative;
+    justify-content:space-around;
+    width:100%;
+    min-width: 1440px;
+    height:228px;
+    background:#2f2f2f;
+}
+.fterBox{
+    text-align: center;
+}
+.fterBox h2{
+    font-size:20px;
+    color:#ffffff;
+    text-align:center;
+    margin:52px 0 17px;
+}
+.fterBox p{
+    font-size:14px;
+    line-height: 24px;
+    color:#ffffff;
+    cursor: pointer;
+    text-align:center;
+}
+.fterlast{
+    overflow: hidden;
+}
+.fterlast div{
+    margin:5px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+.fterlast p{
+    float: left;
+    line-height: 17px;
+    cursor: auto;
+    text-align: left;
+}
+
+.ico{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-right: 6px;
+}
+
+.phone{
+    background: url("./img/phone.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.qqlogo{
+    background: url("./img/QQ.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.email{
+    background: url("./img/email.png") no-repeat;
+    background-size: 100% 100%;
+}
+.footertext{
+    position: absolute;
+    left:0;
+    bottom: 15px;
+    width: 100%;
+    font-size:12px;
+    color:#666666;
+    text-align:center;
+}
