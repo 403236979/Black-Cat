@@ -10,6 +10,11 @@ export  default class Home extends Component {
         this.state = {
         };
     }
+
+    feedback = ()=>{
+        console.log("反馈")
+    }
+
     render() {
         return (
             <div className="homewrap">
@@ -63,8 +68,53 @@ export  default class Home extends Component {
                             </p>
                         </div>
                     </div>
-                    <div className="bgblack">
-
+                    <div className="bigBox">
+                        <div className="bgblack" >
+                            <div className="blackBox pic01">
+                                <div className="dark" style={{position:'absolute'}}/>
+                                    <h1>人才一网打尽</h1>
+                                <div className="blackHover">
+                                    <div className="solid"/>
+                                    <p>
+                                        在海量简历库中精准定位<br/>
+                                        免费获取所需人才
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="blackBox pic02">
+                                <div className="dark" style={{position:'absolute'}}/>
+                                    <h1>清晰任务管理</h1>
+                                <div className="blackHover">
+                                    <div className="solid"/>
+                                    <p>
+                                        告别繁杂数据表格<br/>
+                                        对任务状况一目了然
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="blackBox pic03">
+                                <div className="dark" style={{position:'absolute'}}/>
+                                    <h1>智能业务管家</h1>
+                                <div className="blackHover">
+                                    <div className="solid"/>
+                                    <p>
+                                        优质候选人分类收藏管理<br/>
+                                        独家跟进
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="blackBox pic04">
+                                <div className="dark" style={{position:'absolute'}}/>
+                                    <h1>高效极简操作</h1>
+                                <div className="blackHover">
+                                    <div className="solid"/>
+                                    <p>
+                                        化繁为简<br/>
+                                        便捷易操作的设计让你大幅提高效率
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="footer">
@@ -98,6 +148,10 @@ export  default class Home extends Component {
                     <p className="footertext">
                         Copyright©2017 www.beichoo.com 浙ICP备16023665号-3
                     </p>
+                </div>
+                <div className="feedback" onClick={this.feedback.bind(this)}>
+                    <div className="penpic"/>
+                    <p>意见反馈</p>
                 </div>
             </div>
         )

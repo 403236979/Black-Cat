@@ -14,51 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Component/common/home/home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Component/common/home/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="97" column="44" lean-forward="false" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+            <state relative-caret-position="249">
+              <caret line="152" column="45" lean-forward="true" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
-                <element signature="e#1202#2431#0" expanded="false" />
-                <element signature="e#2590#2788#0" expanded="false" />
-                <element signature="e#2809#3007#0" expanded="false" />
-                <element signature="e#3028#3625#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://F:/work/beichoo_backMana/backmana/app/components/private/home/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="310" selection-end-column="20" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#154#180#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
-        <entry file="file://F:/work/beichoo_backMana/backmana/app/components/private/home/home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="658" column="17" lean-forward="true" selection-start-line="658" selection-start-column="17" selection-end-line="658" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -76,11 +39,20 @@
     <findStrings>
       <find>mOxie</find>
       <find>banner</find>
-      <find>dark</find>
       <find>clear</find>
-      <find>hbackgroud</find>
-      <find>clearfix</find>
       <find>Btn</find>
+      <find>black</find>
+      <find>clearfix</find>
+      <find>hbackgroud</find>
+      <find>b1</find>
+      <find>style=</find>
+      <find>hoverbox</find>
+      <find>blackBox</find>
+      <find>意见反馈</find>
+      <find>hover</find>
+      <find>handleSelect</find>
+      <find>dark</find>
+      <find>onClick</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -91,8 +63,8 @@
         <option value="$PROJECT_DIR$/src/Component/Index.jsx" />
         <option value="$PROJECT_DIR$/src/Router/router.jsx" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/Component/common/home/index.jsx" />
         <option value="$PROJECT_DIR$/src/Component/common/home/home.css" />
+        <option value="$PROJECT_DIR$/src/Component/common/home/index.jsx" />
       </list>
     </option>
   </component>
@@ -294,12 +266,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513574833571</updated>
       <workItem from="1513574838564" duration="1254000" />
-      <workItem from="1513576357592" duration="9670000" />
+      <workItem from="1513576357592" duration="15977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10924000" />
+    <option name="totallyTimeSpent" value="17231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -383,10 +355,6 @@
           <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
-            <element signature="e#1202#2431#0" expanded="false" />
-            <element signature="e#2590#2788#0" expanded="false" />
-            <element signature="e#2809#3007#0" expanded="false" />
-            <element signature="e#3028#3625#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -470,10 +438,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/common/home/img/b1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://F:/work/beichoo_backMana/backmana/app/components/private/home/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="494" column="30" lean-forward="true" selection-start-line="494" selection-start-column="30" selection-end-line="499" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Component/common/home/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="366" column="19" lean-forward="false" selection-start-line="366" selection-start-column="19" selection-end-line="366" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://F:/work/beichoo_backMana/backmana/app/components/private/home/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="310" selection-end-column="20" />
+        <state relative-caret-position="157">
+          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#154#180#0" expanded="true" />
@@ -481,33 +470,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/work/beichoo_backMana/backmana/app/components/private/home/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="658" column="17" lean-forward="true" selection-start-line="658" selection-start-column="17" selection-end-line="658" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Component/common/home/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="97" column="44" lean-forward="false" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        <state relative-caret-position="249">
+          <caret line="152" column="45" lean-forward="true" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
-            <element signature="e#1202#2431#0" expanded="false" />
-            <element signature="e#2590#2788#0" expanded="false" />
-            <element signature="e#2809#3007#0" expanded="false" />
-            <element signature="e#3028#3625#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Component/common/home/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
