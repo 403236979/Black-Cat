@@ -8,11 +8,31 @@ export  default class Home extends Component {
     constructor() {
         super();
         this.state = {
+            fdShow:false
         };
     }
 
-    feedback = ()=>{
+    feedShow = () => {
+        this.setState({
+            fdShow:true
+        })
         console.log("反馈")
+    }
+
+    feedHide = () => {
+        this.setState({
+            fdShow:false
+        })
+        console.log("取消反馈")
+    }
+
+    submit = () => {
+        console.log(this.refs.problem.value)
+        console.log(this.refs.contact.value)
+    }
+
+    stop = (event) => {
+        event.stopPropagation();
     }
 
     render() {
@@ -149,9 +169,17 @@ export  default class Home extends Component {
                         Copyright©2017 www.beichoo.com 浙ICP备16023665号-3
                     </p>
                 </div>
-                <div className="feedback" onClick={this.feedback.bind(this)}>
+                <div className="fbBtn" onClick={this.feedShow.bind(this)}>
                     <div className="penpic"/>
                     <p>意见反馈</p>
+                </div>
+                <div className="fbBox" style={this.state.fdShow?{display:"block"}:{display:"none"}} onClick={this.feedHide.bind(this)}>
+                    <div className="feedback" onClick={this.stop.bind(this)}>
+                        <p>您对辈出蓬莱的建议或意见</p>
+                        <textarea placeholder="问题描述..." ref="problem"/>
+                        <textarea placeholder="联系方式" ref="contact"/>
+                        <p onClick={this.submit.bind(this)}>提交</p>
+                    </div>
                 </div>
             </div>
         )
