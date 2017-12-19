@@ -32,7 +32,11 @@ module.exports = {
         chunkFilename: 'js/[name].[chunkhash:5].min.js',
     },
     resolve: {
-        extensions: ['', '.js', '.jsx', '.less', '.scss', '.css'] //后缀名自动补全
+        extensions: ['.','.js', '.jsx'], //后缀名自动补全
+        alias:{
+            pubConf:path.resolve(__dirname,"./src/Config"),
+            pubCom:path.resolve(__dirname,"./src/Component/public")
+        }
     },
     module: {
         loaders: [{
@@ -42,11 +46,11 @@ module.exports = {
         }, {
             test: /\.css$/,
             exclude: /^node_modules$/,
-            loader: ExtractTextPlugin.extract('style', ['css', 'autoprefixer'])
+            loader: 'style-loader!css-loader?modules&localIdentName=[name]__[local]-[hash:base64:6]'
         }, {
             test: /\.less$/,
             exclude: /^node_modules$/,
-            loader: ExtractTextPlugin.extract('style', ['css', 'autoprefixer', 'less'])
+            loader: 'loader: \'style-loader!css-loader\''
         }, {
             test: /\.scss$/,
             exclude: /^node_modules$/,

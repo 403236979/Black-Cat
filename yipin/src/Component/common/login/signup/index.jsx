@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-
-class Test extends Component {
+export default class Signup extends Component {
     constructor() {
         super();
         this.state = {}
@@ -9,9 +8,8 @@ class Test extends Component {
     render() {
         return (
             <div id='Test'>
-
+                Signup
             </div>
         )
     }
 }
-export default Test;

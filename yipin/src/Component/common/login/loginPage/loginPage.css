@@ -1,0 +1,128 @@
+.page{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height: 890px;
+}
+.logBox{
+    position: relative;
+    top:50%;
+    left:0;
+    margin: -230px auto 200px;
+    background:#ffffff;
+    box-shadow:0 -1px 0 0 rgba(224,224,224,0.01), 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.24);
+    width:380px;
+    height:460px;
+}
+.title{
+    position: relative;
+    top:-56px;
+    left:0;
+    font-size:26px;
+    color:rgba(0,0,0,0.54);
+    text-align:center;
+}
+.logBox img{
+    display: block;
+    margin:14px auto;
+}
+.logBox input{
+    display: block;
+    width:292px;
+    height:14px;
+    margin:0 auto;
+    padding:13px 12px;
+    border:1px solid rgba(0,0,0,0.12);
+    border-radius:2px;
+    font-size:14px;
+    color:rgba(0,0,0,0.54);
+    text-align:left;
+}
+.logBox input:nth-child(3){
+    margin-top: 60px;
+}
+.logBox input:nth-child(4){
+    margin-top: 10px;
+}
+.nextLogin{
+    margin-top:8px;
+    overflow: hidden;
+}
+.nextLogin a{
+    float: right;
+    margin-right: 30px;
+    font-size:12px;
+    color:#0f9d58;
+    line-height: 20px;
+    cursor: pointer;
+}
+.check{
+    height: 20px;
+    float: left;
+    font-size:12px;
+    margin-left: 34px;
+    color:rgba(0,0,0,0.54);
+    text-align:left;
+    cursor: pointer;
+}
+.isCheck{
+    height: 20px;
+    float: left;
+    font-size:12px;
+    margin-left: 34px;
+    color:rgba(0,0,0,0.54);
+    text-align:left;
+    cursor: pointer;
+}
+.check:before{
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top:4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background:rgba(0,0,0,0.54) url("./img/gou.png") no-repeat center;
+    border-radius: 100%;
+}
+.isCheck:before{
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top:4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background:#0f9d58 url("./img/gou.png") no-repeat center;
+    border-radius: 100%;
+}
+.login{
+    width:320px;
+    height:38px;
+    margin:64px auto 0;
+    background:#0f9d58;
+    border-radius:2px;
+    font-size:18px;
+    line-height: 38px;
+    color:#ffffff;
+    text-align:center;
+    cursor: pointer;
+}
+.signin{
+    display: block;
+    width: calc(100% - 28px);
+    margin:23px 0;
+    padding-right:28px;
+    font-size:12px;
+    color:#0f9d58;
+    text-align:right;
+    text-decoration: underline;
+}
+.signin a{
+    font-size:12px;
+    color:#0f9d58;
+    cursor: pointer;
+}

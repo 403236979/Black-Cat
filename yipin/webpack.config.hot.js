@@ -25,7 +25,11 @@ module.exports = {
     },
     devtool: 'cheap-module-eval-source-map',
     resolve: {
-        extensions: ['', '.js', '.jsx', '.less', '.scss', '.css'], //后缀名自动补全
+        extensions: ['.','.js', '.jsx'], //后缀名自动补全
+        alias:{
+            pubConf:path.resolve(__dirname, './src/Config'),
+            pubCom:path.resolve(__dirname,"./src/Component/public")
+        }
     },
     module: {
         loaders: [{
@@ -36,12 +40,12 @@ module.exports = {
         }, {
             test: /\.css$/,
             exclude: /^node_modules$/,
-            loaders: ['style', 'css', 'autoprefixer'],
+            loader: 'style-loader!css-loader?modules&localIdentName=[name]__[local]-[hash:base64:6]',
             include: [APP_PATH]
         }, {
             test: /\.less$/,
             exclude: /^node_modules$/,
-            loaders: ['style', 'css', 'autoprefixer', 'less'],
+            loaders: 'loader: \'style-loader!css-loader\'',
             include: [APP_PATH]
         }, {
             test: /\.scss$/,

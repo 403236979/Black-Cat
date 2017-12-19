@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Test extends Component {
+export default class RestPassword extends Component {
     constructor() {
         super();
         this.state = {}
@@ -9,9 +9,8 @@ class Test extends Component {
     render() {
         return (
             <div id='Test'>
-
+                RestPassword
             </div>
         )
     }
 }
-export default Test;

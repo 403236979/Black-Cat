@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-fetch'
-import {Tool} from '../Config/Tool.jsx'
+import {Tool} from 'pubConf/Tool.jsx'
 
 /*=================
  action.jsx

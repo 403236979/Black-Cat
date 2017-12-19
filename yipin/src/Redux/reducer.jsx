@@ -1,5 +1,5 @@
 import Immutable from 'immutable';
-import {ComStr} from '../Config/ComStr.jsx';
+import {ComStr} from 'pubConf/ComStr.jsx';
 /*=================
  reducer.jsx
  接收Action 并作出处理
