@@ -1,12 +1,13 @@
 import React, {Component,ReactDOM} from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
+
 import style from './home.css'
 /*=============
  群主页
  ==============*/
 export  default class Home extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             fdShow:false
         };
@@ -27,8 +28,8 @@ export  default class Home extends Component {
     }
 
     submit = () => {
-        console.log(this.refs.problem.value)
-        console.log(this.refs.contact.value)
+        console.log(this.refs.problem.value.trim())
+        console.log(this.refs.contact.value.trim())
     }
 
     stop = (event) => {
@@ -41,8 +42,12 @@ export  default class Home extends Component {
                 <div className="header">
                     <div className="logo"/>
                     <div className="btnbox">
-                        <p className="headerBtn">登录</p>
-                        <p className="headerBtn">注册</p>
+                        <p className="headerBtn">
+                            <Link to="/login" style={{display:"block",width:"100%",height:"100%"}}>登录</Link>
+                        </p>
+                        <p className="headerBtn">
+                            <Link to="/login/signup" style={{display:"block",width:"100%",height:"100%"}}>注册</Link>
+                        </p>
                     </div>
                 </div>
                 <div className="banner" style={{height:window.innerHeight}}>
@@ -53,7 +58,7 @@ export  default class Home extends Component {
                             发现更多优质人才
                         </p>
                         <p className="freebtn">
-                            免费试用
+                            <Link to="/login" style={{display:"block",width:"100%",height:"100%"}}>免费试用</Link>
                         </p>
                     </div>
                 </div>

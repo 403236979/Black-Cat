@@ -1,4 +1,7 @@
+export const checkTelePhone = (s) => {
 
-export const  ComStr = {
-    str:'一些全局参数,可以放这里'
+
+    var reg = /^1[3|4|5|7|8][0-9]{9}$/;
+
+    return reg.test(s);
 };

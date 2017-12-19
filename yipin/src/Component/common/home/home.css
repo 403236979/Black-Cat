@@ -37,9 +37,12 @@
     width:90px;
     height:30px;
     line-height: 30px;
-    color:#37474f;
+    color:#37474f !important;
     text-align:center;
     cursor: pointer;
+}
+.headerBtn a{
+    color:#37474f !important;
 }
 .headerBtn:hover{
     float: left;
@@ -52,6 +55,9 @@
     color:#FFFFFF;
     text-align:center;
     cursor: pointer;
+}
+.headerBtn:hover a{
+    color:#FFFFFF !important;
 }
 .banner{
     position: relative;
