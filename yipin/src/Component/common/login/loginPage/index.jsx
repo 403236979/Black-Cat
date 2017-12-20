@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import style from './loginPage.css'
 import { Link } from 'react-router-dom'
 import {checkTelePhone , checkPassword } from 'pubConf/Comstr.jsx'
+import LoginHeader from "pubCom/loginHeader/index.jsx"
 
 export default class LoginPage extends Component {
     constructor() {
@@ -53,6 +54,7 @@ export default class LoginPage extends Component {
     render() {
         return (
             <div className={style.page} style={{height:window.innerHeight}}>
+                <LoginHeader/>
                 <div className={style.logBox}>
                     <p className={style.title}>登 录</p>
                     <img src={require("./img/logo_black.png")} width={"190px"}/>

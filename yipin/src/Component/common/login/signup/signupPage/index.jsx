@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import style from './signup.css'
 import { Link , withRouter } from 'react-router-dom'
 import {checkTelePhone , checkPassword , checkCode} from 'pubConf/Comstr.jsx'
+import LoginHeader from "pubCom/loginHeader/index.jsx"
 
 class Signup extends Component {
     constructor(props) {
@@ -65,6 +66,7 @@ class Signup extends Component {
     render() {
         return (
             <div className={style.page} style={{height:window.innerHeight}}>
+                <LoginHeader/>
                 <div className={style.sigBox}>
                     <p className={style.title}>注 册</p>
                     <img src={require("./img/logo_black.png")} width={"190px"}/>

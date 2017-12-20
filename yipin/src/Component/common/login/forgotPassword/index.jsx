@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import style from './forgotPassword.css'
 import { Link , withRouter } from 'react-router-dom'
 import {checkTelePhone , checkCode } from 'pubConf/Comstr.jsx'
+import LoginHeader from "pubCom/loginHeader/index.jsx"
 
 class ForgotPassword extends Component {
     constructor(props) {
@@ -56,6 +57,7 @@ class ForgotPassword extends Component {
     render() {
         return (
             <div className={style.page} style={{height:window.innerHeight}}>
+                <LoginHeader/>
                 <div className={style.sigBox}>
                     <img src={require("./img/logo_black.png")} width={"190px"}/>
                     <div className={style.getCode}>
