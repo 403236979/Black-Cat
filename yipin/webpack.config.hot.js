@@ -25,7 +25,7 @@ module.exports = {
     },
     devtool: 'cheap-module-eval-source-map',
     resolve: {
-        extensions: ['.','.js', '.jsx'], //后缀名自动补全
+        extensions: ["",'.','.js', '.jsx'], //后缀名自动补全
         alias:{
             pubConf:path.resolve(__dirname, './src/Config'),
             pubCom:path.resolve(__dirname,"./src/Component/public")

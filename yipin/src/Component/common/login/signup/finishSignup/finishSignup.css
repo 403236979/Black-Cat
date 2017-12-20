@@ -1,0 +1,101 @@
+.page{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height: 890px;
+}
+.sigBox{
+    position: relative;
+    top:50%;
+    left:0;
+    margin: -230px auto 200px;
+    background:#ffffff;
+    box-shadow:0 -1px 0 0 rgba(224,224,224,0.01), 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.24);
+    width:380px;
+    height:460px;
+}
+.title{
+    position: relative;
+    top:-56px;
+    left:0;
+    font-size:26px;
+    color:rgba(0,0,0,0.54);
+    text-align:center;
+}
+.sigBox img{
+    display: block;
+    margin:14px auto;
+}
+.sigBox input{
+    display: block;
+    width:292px;
+    height:14px;
+    margin:10px auto 0;
+    padding:13px 12px;
+    border:1px solid #C4D1D8;
+    border-radius:2px;
+    font-size:14px;
+    color:rgba(0,0,0,0.54);
+    text-align:left;
+}
+.sigBox input:nth-child(3){
+    margin-top: 45px;
+}
+
+.btn{
+    width: 320px;
+    margin:37px auto 0;
+    overflow: hidden;
+}
+
+.btn a{
+    display: block;
+    width: 100%;
+}
+
+.back a{
+    color:#0f9d58;
+}
+
+.back{
+    float: left;
+    border:1px solid #0f9d58;
+    border-radius:4px;
+    width:153px;
+    height:40px;
+    line-height: 42px;
+    font-size:14px;
+    color:#0f9d58;
+    text-align:center;
+    cursor: pointer;
+}
+
+.next{
+    float: right;
+    background:#0f9d58;
+    border-radius:2px;
+    width:155px;
+    height:42px;
+    line-height: 42px;
+    font-size:14px;
+    color:#ffffff;
+    text-align:center;
+    cursor: pointer;
+}
+
+.loginPage{
+    display: block;
+    width: calc(100% - 28px);
+    margin:23px 0;
+    padding-right:28px;
+    font-size:12px;
+    color:#0f9d58;
+    text-align:right;
+    text-decoration: underline;
+}
+.loginPage a{
+    font-size:12px;
+    color:#0f9d58;
+    cursor: pointer;
+}

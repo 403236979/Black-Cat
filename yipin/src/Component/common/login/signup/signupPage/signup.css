@@ -5,7 +5,7 @@
     width: 100%;
     min-height: 890px;
 }
-.logBox{
+.sigBox{
     position: relative;
     top:50%;
     left:0;
@@ -23,15 +23,15 @@
     color:rgba(0,0,0,0.54);
     text-align:center;
 }
-.logBox img{
+.sigBox img{
     display: block;
     margin:14px auto;
 }
-.logBox input{
+.sigBox input{
     display: block;
     width:292px;
     height:14px;
-    margin:0 auto;
+    margin:10px auto 0;
     padding:13px 12px;
     border:1px solid #C4D1D8;
     border-radius:2px;
@@ -39,79 +39,74 @@
     color:rgba(0,0,0,0.54);
     text-align:left;
 }
-.logBox input:nth-child(3){
+.sigBox input:nth-child(3){
     margin-top: 45px;
 }
-.logBox input:nth-child(4){
-    margin-top: 10px;
-}
-.nextLogin{
-    margin-top:8px;
+
+.getCode{
+    display: block;
+    width: 318px;
+    margin:0 auto;
     overflow: hidden;
 }
-.nextLogin a{
+
+.getCode input{
+    float: left;
+    width:calc(67% - 24px);
+}
+.getCode span{
+    display: block;
     float: right;
-    margin-right: 30px;
-    font-size:12px;
-    color:#0f9d58;
-    line-height: 20px;
-    cursor: pointer;
-}
-.check{
-    height: 20px;
-    float: left;
-    font-size:12px;
-    margin-left: 34px;
-    color:rgba(0,0,0,0.54);
-    text-align:left;
-    cursor: pointer;
-}
-.isCheck{
-    height: 20px;
-    float: left;
-    font-size:12px;
-    margin-left: 34px;
-    color:rgba(0,0,0,0.54);
-    text-align:left;
-    cursor: pointer;
-}
-.check:before{
-    content: " ";
-    display: inline-block;
-    position: relative;
-    top:4px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-    background:rgba(0,0,0,0.54) url("./img/gou.png") no-repeat center;
-    border-radius: 100%;
-}
-.isCheck:before{
-    content: " ";
-    display: inline-block;
-    position: relative;
-    top:4px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-    background:#0f9d58 url("./img/gou.png") no-repeat center;
-    border-radius: 100%;
-}
-.login{
-    width:320px;
-    height:38px;
-    margin:64px auto 0;
+    width:30%;
+    height:42px;
+    margin-top: 10px;
+    line-height: 42px;
     background:#0f9d58;
     border-radius:2px;
-    font-size:18px;
-    line-height: 38px;
+    font-size:14px;
     color:#ffffff;
     text-align:center;
     cursor: pointer;
 }
-.signin{
+
+.btn{
+    width: 320px;
+    margin:37px auto 0;
+    overflow: hidden;
+}
+
+.btn a{
+    display: block;
+    width: 100%;
+}
+
+.back{
+    float: left;
+    border:1px solid #0f9d58;
+    border-radius:4px;
+    width:153px;
+    height:40px;
+    line-height: 42px;
+    font-size:14px;
+    color:#0f9d58;
+    text-align:center;
+    cursor: pointer;
+}
+
+.next{
+    float: right;
+    background:#0f9d58;
+    border-radius:2px;
+    width:155px;
+    height:42px;
+    line-height: 42px;
+    font-size:14px;
+    color:#ffffff;
+    text-align:center;
+    cursor: pointer;
+}
+
+.loginPage{
     display: block;
     width: calc(100% - 28px);
     margin:23px 0;
@@ -121,7 +116,7 @@
     text-align:right;
     text-decoration: underline;
 }
-.signin a{
+.loginPage a{
     font-size:12px;
     color:#0f9d58;
     cursor: pointer;

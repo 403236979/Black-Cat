@@ -32,7 +32,7 @@ module.exports = {
         chunkFilename: 'js/[name].[chunkhash:5].min.js',
     },
     resolve: {
-        extensions: ['.','.js', '.jsx'],//后缀名自动补全
+        extensions: ["",'.','.js', '.jsx'],//后缀名自动补全
         alias:{
             pubConf:path.resolve(__dirname,"./src/Config"),
             pubCom:path.resolve(__dirname,"./src/Component/public")
