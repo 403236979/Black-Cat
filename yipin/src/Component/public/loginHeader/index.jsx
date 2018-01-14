@@ -6,7 +6,6 @@ export default class LoginHeader extends Component {
         super(props);
         this.state = {
         }
-        console.log(style)
     }
 
     render() {

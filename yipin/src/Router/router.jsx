@@ -7,6 +7,7 @@ import RestPassword from '../Component/common/login/restPassword/Index.jsx';
 import ForgotPassword from '../Component/common/login/forgotPassword/Index.jsx';
 import Signup from '../Component/common/login/signup/signupPage/Index.jsx';
 import FinishSignup from '../Component/common/login/signup/finishSignup/Index.jsx';
+import taskManagement from '../Component/common/guide/taskManagement/Index.jsx';
 
 const RouteConfig =(
   <BrowserRouter basename="/">
@@ -25,6 +26,12 @@ const RouteConfig =(
                       </Switch>
                   </Route>
                   <Redirect to="/login/loginPage" component={LoginPage} />
+              </Switch>
+          </Route>
+          <Route path='/guide'>
+              <Switch>
+                  <Route path="/guide/taskManagement" component={taskManagement} />
+                  <Redirect to="/guide/taskManagement" component={taskManagement} />
               </Switch>
           </Route>
       </Switch>

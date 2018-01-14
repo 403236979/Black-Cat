@@ -35,7 +35,8 @@ module.exports = {
         extensions: ["",'.','.js', '.jsx'], //后缀名自动补全
         alias:{
             pubConf:path.resolve(__dirname,"./src/Config"),
-            pubCom:path.resolve(__dirname,"./src/Component/public")
+            pubCom:path.resolve(__dirname,"./src/Component/public"),
+            imgPath:path.resolve(__dirname,"./src/Image")
         }
     },
     module: {

@@ -1,0 +1,35 @@
+.box{
+    display: block;
+    position: relative;
+    top:0;
+    left: 0;
+    background:#ffffff;
+    box-shadow:0 -1px 0 0 rgba(224,224,224,0.01), 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.24);
+    width:150px;
+    height:100%;
+}
+
+.navBox{
+    display: block;
+    padding-top: 20px;
+}
+
+.navContent{
+    display: block;
+    background:#ffffff;
+    width:150px;
+    height:50px;
+    font-size:15px;
+    line-height: 50px;
+    color:#1f1f1f;
+    letter-spacing:0;
+    text-align:center;
+    cursor: pointer;
+}
+
+li img{
+    width:26px;
+    margin:12px 15px 12px 0;
+    text-align:left;
+    vertical-align: bottom;
+}
