@@ -2,39 +2,51 @@ export const item=[
     {
         name:"任务管理",
         imgSrc:require("imgPath/kanban.png"),
+        imgAct:require("imgPath/kanbanactive.png"),
         child:[
             "数据看板",
             "新增项目"
         ],
-        isActive:true
+        link:"taskManagement",
+        isActive:true,
+        index:0
     },
     {
         name:"人才简历",
         imgSrc:require('imgPath/talent.png'),
-        child:[
-            "数据看板",
-            "人才简历"
-        ],
-        isActive:false
+        imgAct:require("imgPath/talentactive.png"),
+        child:[],
+        link:"talent",
+        isActive:false,
+        index:1
     },
     {
         name:"人才管家",
         imgSrc:require("imgPath/talenthub.png"),
+        imgAct:require("imgPath/talenthubactive.png"),
         child:[
             "上传简历"
         ],
-        isActive:false
+        link:"talenthub",
+        isActive:false,
+        index:2
     },
     {
         name:"我的团队",
         imgSrc:require("imgPath/team.png"),
+        imgAct:require("imgPath/teamactive.png"),
         child:[],
-        isActive:false
+        link:"myteam",
+        isActive:false,
+        index:3
     },
     {
         name:"个人中心",
         imgSrc:require("imgPath/personal.png"),
+        imgAct:require("imgPath/personalactive.png"),
         child:[],
-        isActive:false
+        link:"personal",
+        isActive:false,
+        index:4
     }
 ];

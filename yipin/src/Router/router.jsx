@@ -7,7 +7,11 @@ import RestPassword from '../Component/common/login/restPassword/Index.jsx';
 import ForgotPassword from '../Component/common/login/forgotPassword/Index.jsx';
 import Signup from '../Component/common/login/signup/signupPage/Index.jsx';
 import FinishSignup from '../Component/common/login/signup/finishSignup/Index.jsx';
-import taskManagement from '../Component/common/guide/taskManagement/Index.jsx';
+import TaskManagement from '../Component/common/guide/taskManagement/Index.jsx';
+import Personal from '../Component/common/guide/Personal/Index.jsx';
+import Talent from '../Component/common/guide/Talent/Index.jsx';
+import Talenthub from '../Component/common/guide/Talenthub/Index.jsx';
+import Myteam from '../Component/common/guide/Myteam/Index.jsx';
 
 const RouteConfig =(
   <BrowserRouter basename="/">
@@ -30,8 +34,12 @@ const RouteConfig =(
           </Route>
           <Route path='/guide'>
               <Switch>
-                  <Route path="/guide/taskManagement" component={taskManagement} />
-                  <Redirect to="/guide/taskManagement" component={taskManagement} />
+                  <Route path="/guide/taskManagement" component={TaskManagement} />
+                  <Route path="/guide/myteam" component={Myteam} />
+                  <Route path="/guide/personal" component={Personal} />
+                  <Route path="/guide/talent" component={Talent} />
+                  <Route path="/guide/talenthub" component={Talenthub} />
+                  <Redirect to="/guide/taskManagement" component={TaskManagement} />
               </Switch>
           </Route>
       </Switch>

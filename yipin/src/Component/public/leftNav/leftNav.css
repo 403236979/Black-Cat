@@ -18,10 +18,23 @@
     display: block;
     background:#ffffff;
     width:150px;
-    height:50px;
+    min-height:50px;
     font-size:15px;
     line-height: 50px;
     color:#1f1f1f;
+    letter-spacing:0;
+    text-align:center;
+    cursor: pointer;
+}
+
+.navContentAct{
+    display: block;
+    background:#e0e0e0;
+    width:150px;
+    min-height:50px;
+    font-size:15px;
+    line-height: 50px;
+    color:#0f9d58;
     letter-spacing:0;
     text-align:center;
     cursor: pointer;
@@ -32,4 +45,26 @@ li img{
     margin:12px 15px 12px 0;
     text-align:left;
     vertical-align: bottom;
+}
+
+.child{
+    width:83px;
+    height:25px;
+    padding-left: 67px;
+    opacity:0.54;
+    font-size:13px;
+    line-height: 25px;
+    color:#1f1f1f;
+    text-align:left;
+}
+
+.childAct{
+    width:83px;
+    height:25px;
+    padding-left: 67px;
+    background: #efefef;
+    font-size:13px;
+    line-height: 25px;
+    color:#0f9d58;
+    text-align:left;
 }

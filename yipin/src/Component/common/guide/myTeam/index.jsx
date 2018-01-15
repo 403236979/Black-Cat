@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import style from './taskManagement.css'
+import style from './myTeam.css'
 import { Link , withRouter } from 'react-router-dom'
 import LeftNav from "pubCom/leftNav/index.jsx"
 import GuideHeader from "pubCom/guideHeader/index.jsx"
 
 
-class TaskManagement extends Component {
+class MyTeam extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showIndex:0
+            showIndex:3
         }
     }
 
@@ -19,10 +19,10 @@ class TaskManagement extends Component {
                 <GuideHeader/>
                 <LeftNav {...this.props} {...this.state}/>
                 <div className={style.contentBox}>
-                    taskManagement
+                    myTeam
                 </div>
             </div>
         )
     }
 }
-export default withRouter(TaskManagement);
+export default withRouter(MyTeam);
