@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import style from './guideHeader.css'
-import { Link } from 'react-router-dom'
+import { Link , withRouter } from 'react-router-dom'
 
-export default class GuideHeader extends Component {
+ class GuideHeader extends Component {
     constructor(props) {
         super(props);
         this.state = {
             show:false
         }
+        console.log(this.props.history)
     }
 
     show = () =>{
@@ -24,6 +25,10 @@ export default class GuideHeader extends Component {
         },()=>{
             console.log('hide')
         })
+    }
+
+    changePer = ()=>{
+        this.props.history.push('/guide/personal/personalEdit')
     }
 
     render() {
@@ -47,7 +52,7 @@ export default class GuideHeader extends Component {
                                         </div>
                                         <div className={style.perChange}>
                                             <p>企业认证</p>
-                                            <p>编辑个人信息</p>
+                                            <p onClick={this.changePer.bind(this)}>编辑个人信息</p>
                                         </div>
                                         <div className={style.clear}></div>
                                     </div>
@@ -67,3 +72,4 @@ export default class GuideHeader extends Component {
         )
     }
 }
+export default withRouter(GuideHeader);

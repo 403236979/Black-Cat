@@ -9,7 +9,6 @@ export default class LeftNav extends Component {
             showIndex : this.props.showIndex,
             showChild : ""
         }
-
     }
 
      changeShow = (index,e) =>{
@@ -18,7 +17,7 @@ export default class LeftNav extends Component {
             showIndex:index,
             showChild : ""
         },()=>{
-            location.pathname='/guide/'+item[index].link
+            this.props.history.push('/guide/'+item[index].link)
         })
 
     };
