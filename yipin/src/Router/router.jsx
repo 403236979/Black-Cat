@@ -9,6 +9,7 @@ import Signup from '../Component/common/login/signup/signupPage/Index.jsx';
 import FinishSignup from '../Component/common/login/signup/finishSignup/Index.jsx';
 import TaskManagement from '../Component/common/guide/taskManagement/Index.jsx';
 import Personal from '../Component/common/guide/Personal/Index.jsx';
+import PersonalEdit from '../Component/common/guide/personal/personalEdit/Index.jsx';
 import Talent from '../Component/common/guide/Talent/Index.jsx';
 import Talenthub from '../Component/common/guide/Talenthub/Index.jsx';
 import Myteam from '../Component/common/guide/Myteam/Index.jsx';
@@ -36,7 +37,11 @@ const RouteConfig =(
               <Switch>
                   <Route path="/guide/taskManagement" component={TaskManagement} />
                   <Route path="/guide/myteam" component={Myteam} />
-                  <Route path="/guide/personal" component={Personal} />
+                  <Route path="/guide/personal">
+                      <switch>
+                          <Route path="/guide/personal/personalEdit" component={PersonalEdit} />
+                      </switch>
+                  </Route>
                   <Route path="/guide/talent" component={Talent} />
                   <Route path="/guide/talenthub" component={Talenthub} />
                   <Redirect to="/guide/taskManagement" component={TaskManagement} />

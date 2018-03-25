@@ -7,7 +7,7 @@ export const item=[
             "数据看板",
             "新增项目"
         ],
-        link:"taskManagement",
+        link:"TaskManagement",
         isActive:true,
         index:0
     },
@@ -16,7 +16,7 @@ export const item=[
         imgSrc:require('imgPath/talent.png'),
         imgAct:require("imgPath/talentactive.png"),
         child:[],
-        link:"talent",
+        link:"Talent",
         isActive:false,
         index:1
     },
@@ -27,7 +27,7 @@ export const item=[
         child:[
             "上传简历"
         ],
-        link:"talenthub",
+        link:"Talenthub",
         isActive:false,
         index:2
     },
@@ -36,7 +36,7 @@ export const item=[
         imgSrc:require("imgPath/team.png"),
         imgAct:require("imgPath/teamactive.png"),
         child:[],
-        link:"myteam",
+        link:"Myteam",
         isActive:false,
         index:3
     },
@@ -45,7 +45,7 @@ export const item=[
         imgSrc:require("imgPath/personal.png"),
         imgAct:require("imgPath/personalactive.png"),
         child:[],
-        link:"personal",
+        link:"Personal",
         isActive:false,
         index:4
     }

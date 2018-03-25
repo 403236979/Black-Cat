@@ -13,7 +13,7 @@ export const checkPassword = (password) => {
 };
 
 /*
-* 8~16位无限制
+* 8~16位
 * */
 
 export const checkPasswordV2 = (password2) => {

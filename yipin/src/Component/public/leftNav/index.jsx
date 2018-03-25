@@ -18,7 +18,7 @@ export default class LeftNav extends Component {
             showIndex:index,
             showChild : ""
         },()=>{
-            this.props.history.push(item[index].link)
+            location.pathname='/guide/'+item[index].link
         })
 
     };

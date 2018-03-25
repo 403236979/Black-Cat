@@ -24,15 +24,17 @@ export default class LoginPage extends Component {
     login = () => {
         let phone = this.refs.phone.value;
         let password = this.refs.password.value;
-        if(typeof(password) === "undefined"||typeof(phone) === "undefined"){
-            return false;
-        }
         this.setState({
             phoneWarn:!checkTelePhone(phone),
             passwordWarn:!checkPassword(password)
         },()=>{
             console.log(this.state)
         });
+        if(typeof(password) === "undefined"||typeof(phone) === "undefined" || checkTelePhone(phone) == false || checkPassword(password) == false){
+            return false;
+        }else{
+            location.pathname = "/guide";
+        }
     };
 
     rest = (type) => {
