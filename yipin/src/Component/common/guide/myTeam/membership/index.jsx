@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import style from './personal.css'
+import style from './membership.css'
 import { Link , withRouter } from 'react-router-dom'
 import LeftNav from "pubCom/leftNav/index.jsx"
 import GuideHeader from "pubCom/guideHeader/index.jsx"
 
 
-class Personal extends Component {
+class MyTeam extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showIndex:4
+            showIndex:3
         }
     }
 
@@ -19,10 +19,10 @@ class Personal extends Component {
                 <GuideHeader/>
                 <LeftNav {...this.props} {...this.state}/>
                 <div className={style.contentBox}>
-                    personal
+                    myTeam
                 </div>
             </div>
         )
     }
 }
-export default withRouter(Personal);
+export default withRouter(MyTeam);

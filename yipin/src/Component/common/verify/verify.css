@@ -1,0 +1,210 @@
+.container{
+    width:100%;
+    min-width: 1200px;
+    padding-top: 80px;
+}
+
+.rightSide{
+    box-sizing: border-box;
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 150px);
+    min-width: 1000px;
+}
+
+.topSide{
+    padding-left: 21px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #fff;
+    border:1px solid transparent;
+    box-shadow: 0 -1px 0 0 hsla(0,0%,88%,.01), 0 0 2px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.24);
+}
+
+.title{
+    font-size: 14px;
+    color: #0f9d58;
+    margin-right: 25px;
+    margin-bottom: 7px;
+}
+
+.tip1{
+    background: #5fb8ff;
+    border-radius: 2px;
+    width: 51px;
+    height: 16px;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    display: inline-block;
+}
+
+.topSide p:nth-child(2){
+    font-size: 12px;
+    color: rgba(0,0,0,.87);
+    text-align: left;
+    margin-top: 7px;
+    margin-bottom: 40px;
+}
+
+.topSide img{
+    width: 200px;
+    vertical-align: bottom;
+}
+
+.tip2{
+    display: inline-block;
+    height: 12px;
+    margin-left: 72px;
+    background: #0f9d58;
+    border-radius: 2px;
+    padding: 5px 15px;
+    border: none;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.downSide{
+    position: relative;
+    height: 354px;
+    padding-left: 21px;
+    padding-top: 12px;
+    background: #fff;
+    box-shadow: 0 -1px 0 0 hsla(0,0%,88%,.01), 0 0 2px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.24);
+}
+
+.downSide p{
+    overflow: hidden;
+}
+
+.downSide p:nth-child(2){
+    font-size: 12px;
+    color: rgba(0,0,0,.87);
+    margin-bottom: 20px;
+}
+
+.downSide p:nth-child(3){
+    margin-bottom: 10px;
+    position: relative;
+}
+
+label{
+    float: left;
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+    margin-right: 5px;
+}
+
+input{
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 2px;
+    width: 278px;
+    height: 30px;
+    text-indent: 10px;
+}
+
+.companyImg{
+   cursor: pointer;
+   vertical-align: baseline;
+   background: rgba(0,0,0,.06);
+   border: 1px solid rgba(0,0,0,.12);
+   border-radius: 2px;
+   width: 280px;
+   height: 178px;
+   line-height: 178px;
+   text-align: center;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+}
+
+.authentication{
+    float: left;
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+    margin-right: 5px;
+}
+
+.companyImg img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40px;
+    width: 100px;
+    height: 80px;
+}
+
+.companyImg p{
+    display: block;
+    margin:0!important;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    line-height: 30px;
+    width: 100%;
+    color: rgba(0,0,0,.87);
+}
+
+.compangBtn{
+    width: 354px;
+    text-align: right;
+}
+
+.tip3{
+    display: inline-block;
+    background: #0f9d58;
+    line-height: 22px;
+    border-radius: 2px;
+    height: 22px;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-top: 23px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.lastTip{
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+    font-weight: 700;
+}
+
+.desc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.desc p{
+    opacity: .54;
+    font-size: 12px;
+    margin: 0!important;
+    color: #000;
+}
+
+.desc h1{
+    margin-top: 24px;
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+    font-weight: 700;
+}
+
+.clear{
+    clear: both;
+}

@@ -27,8 +27,11 @@ import { Link , withRouter } from 'react-router-dom'
         })
     }
 
-    changePer = ()=>{
-        this.props.history.push('/guide/personal/personalEdit')
+    change = (text)=>{
+        if(text ==='personal'){
+            this.props.history.push('/guide/personal/personalEdit')
+        }else if(text ==='company'){
+            this.props.history.push('/verify')}
     }
 
     render() {
@@ -45,14 +48,14 @@ import { Link , withRouter } from 'react-router-dom'
                                 {this.state.show === true
                                     ?<div className={style.perFloat}>
                                     <div className={style.perImp}>
-                                        <span>测</span>
+                                        <span onClick={this.change.bind(this,'personal')}>测</span>
                                         <div className={style.imf}>
                                             <p>测试</p>
                                             <p>403236979@qq.com</p>
                                         </div>
                                         <div className={style.perChange}>
-                                            <p>企业认证</p>
-                                            <p onClick={this.changePer.bind(this)}>编辑个人信息</p>
+                                            <p onClick={this.change.bind(this,'company')}>企业认证</p>
+                                            <p onClick={this.change.bind(this,'personal')}>编辑个人信息</p>
                                         </div>
                                         <div className={style.clear}></div>
                                     </div>

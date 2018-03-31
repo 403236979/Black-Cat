@@ -1,0 +1,22 @@
+.tab_title_wrap{
+    background-color: #FFFFFF;
+    height: 30px;
+}
+
+.tab_title{
+    box-sizing: border-box;
+    float: left;
+    margin-right: 5px;
+    width: 90px;
+    text-align: center;
+    height: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,0,0,.87);
+}
+
+.tab_title:hover{
+
+    cursor: pointer;
+}

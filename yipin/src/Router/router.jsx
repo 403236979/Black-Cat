@@ -8,11 +8,12 @@ import ForgotPassword from '../Component/common/login/forgotPassword/Index.jsx';
 import Signup from '../Component/common/login/signup/signupPage/Index.jsx';
 import FinishSignup from '../Component/common/login/signup/finishSignup/Index.jsx';
 import TaskManagement from '../Component/common/guide/taskManagement/Index.jsx';
-import Personal from '../Component/common/guide/Personal/Index.jsx';
+import PersonalTakeList from '../Component/common/guide/personal/PersonalTakeList/Index.jsx';
 import PersonalEdit from '../Component/common/guide/personal/personalEdit/Index.jsx';
 import Talent from '../Component/common/guide/Talent/Index.jsx';
 import Talenthub from '../Component/common/guide/Talenthub/Index.jsx';
-import Myteam from '../Component/common/guide/Myteam/Index.jsx';
+import Membership from '../Component/common/guide/myTeam/membership/index.jsx';
+import Verify from '../Component/common/verify/Index.jsx';
 
 const RouteConfig =(
   <BrowserRouter basename="/">
@@ -36,9 +37,14 @@ const RouteConfig =(
           <Route path='/guide'>
               <Switch>
                   <Route path="/guide/taskManagement" component={TaskManagement} />
-                  <Route path="/guide/myteam" component={Myteam} />
+                  <Route path="/guide/myTeam">
+                      <switch>
+                          <Route path="/guide/myTeam/membership"  component={Membership} />
+                      </switch>
+                  </Route>
                   <Route path="/guide/personal">
                       <switch>
+                          <Route path="/guide/personal/personalTakeList" component={PersonalTakeList} />
                           <Route path="/guide/personal/personalEdit" component={PersonalEdit} />
                       </switch>
                   </Route>
@@ -47,6 +53,7 @@ const RouteConfig =(
                   <Redirect to="/guide/taskManagement" component={TaskManagement} />
               </Switch>
           </Route>
+          <Route path='/verify' component={Verify}/>
       </Switch>
    </BrowserRouter>
 );

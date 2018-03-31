@@ -1,0 +1,48 @@
+.table{
+
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table thead,tbody{
+
+    background-color: #ffffff;
+}
+
+.theadTd {
+    height: 44px;
+    vertical-align: middle;
+    color: #827B7B;
+    background:rgba(0,0,0,0.12);
+    font-size:14px;
+    color:rgba(0,0,0,0.87);
+}
+
+.bodyTr:hover{
+    cursor: pointer;
+    background-color: #F2F5F8;;
+}
+.table tbody tr:hover{
+    cursor: pointer;
+}
+
+.table tbody tr td {
+    min-height: 30px;
+    vertical-align: middle;
+    max-width: 200px;
+    word-wrap: break-word;
+    margin-top: 10px;
+    line-height: 44px;
+    min-width: 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.retentionAnalysis{
+    background-color: #a9e8d0;
+}
+
+
+
+
+

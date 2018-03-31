@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import style from './personal.css'
+import style from './personalEdit.css'
 import { Link , withRouter } from 'react-router-dom'
 import LeftNav from "pubCom/leftNav/index.jsx"
 import GuideHeader from "pubCom/guideHeader/index.jsx"

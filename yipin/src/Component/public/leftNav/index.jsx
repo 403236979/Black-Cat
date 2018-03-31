@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import style from './leftNav.css'
 import {item} from 'pubConf/Config.jsx'
+import { Link , withRouter } from 'react-router-dom'
 
-export default class LeftNav extends Component {
+
+class LeftNav extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -58,3 +60,5 @@ export default class LeftNav extends Component {
         )
     }
 }
+export default withRouter(LeftNav);
+

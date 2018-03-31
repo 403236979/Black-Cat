@@ -36,7 +36,7 @@ export const item=[
         imgSrc:require("imgPath/team.png"),
         imgAct:require("imgPath/teamactive.png"),
         child:[],
-        link:"myteam",
+        link:"myTeam/membership",
         isActive:false,
         index:3
     },
@@ -45,7 +45,7 @@ export const item=[
         imgSrc:require("imgPath/personal.png"),
         imgAct:require("imgPath/personalactive.png"),
         child:[],
-        link:"personal",
+        link:"personal/personalTakeList",
         isActive:false,
         index:4
     }
