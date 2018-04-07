@@ -24,7 +24,8 @@ class PersonalTakeList extends Component {
             userphone:"",
             useremail:"",
             userjob:"",
-            userlogo:''
+            userlogo:'',
+            showIndex:3
         }
     }
 
@@ -77,15 +78,11 @@ class PersonalTakeList extends Component {
         let thiz = this;
         const columns = [
             {
-                title:"客户公司",
-                key:"company_name"
-            },
-            {
-                title:"保障职位",
+                title:"职位",
                 key:"job_name"
             },
             {
-                title:"交付日期剩余",
+                title:"剩余日期",
                 key:"start_time"
             },
             {

@@ -11,7 +11,7 @@ export default class LoginHeader extends Component {
     render() {
         return (
             <div className={style.header}>
-                <img src={require("./img/logo_white.png")}/>
+                {/*<img src={require("./img/logo_white.png")}/>*/}
             </div>
         )
     }

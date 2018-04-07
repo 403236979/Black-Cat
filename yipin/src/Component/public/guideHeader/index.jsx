@@ -38,10 +38,9 @@ import { Link , withRouter } from 'react-router-dom'
         return (
             <div className={style.header}>
                 <div className={style.box}>
-                    <img src={require("./img/logo_white.png")}/>
+                    {/*<img src={require("./img/logo_white.png")}/>*/}
                     <div className={style.leftContent}>
-                        <img src={require("./img/feedback.png")}/>
-                        <img src={require("./img/shell.png")}/>
+                        <img style={{cursor:'pointer'}} src={require("./img/feedback.png")}/>
                         <div className={style.mouse} onMouseEnter={this.show.bind(this)} onMouseLeave={this.hide.bind(this)}>
                             <div className={style.person}>
                                 <p>测</p>

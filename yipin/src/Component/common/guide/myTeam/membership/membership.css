@@ -1,5 +1,254 @@
+
+.box{
+    position: relative;
+    width:100%;
+    margin-top: 80px;
+}
+
 .contentBox{
+    float: right;
+    width: calc(100% - 150px);
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.top{
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.117647);
+}
+
+.btn{
+    box-sizing: border-box;
+    float: left;
+    margin-right: 5px;
+    width: 90px;
+    text-align: center;
+    height: 100%;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,0,0,.87);
+    cursor: pointer;
+}
+
+.btnClick{
+    color: rgb(15, 157, 88);
+    border-bottom: 3px solid rgb(15, 157, 88);
+    line-height: 45px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 5px;
+    width: 90px;
+    text-align: center;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,0,0,.87);
+    cursor: pointer;
+}
+
+.tip{
     position: absolute;
+    font-size: 12px;
+    color: #1f1f1f;
+    left: 400px;
+    top: 15px;
+}
+
+.tip a{
+    color: #0f9d58!important;
+}
+
+.link a{
+    display: block;
+    font-size: 14px;
+    color: #0f9d58!important;
+    line-height: 14px;
+    float: right;
+    margin: 15px 20px 0;
+    overflow: hidden;
+}
+
+.info{
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    border: 0 solid #e0e0e0;
+    padding: 19px 20px;
+    transition: .5s;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.imgWap{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #4a4a4a;
+    float: left;
+    overflow: hidden;
+}
+
+.infoLeft{
+    box-sizing: border-box;
+    height: 100%;
+    float: left;
+}
+
+.nameWap{
+    min-width: 138px;
+    max-width: 150px;
+    float: left;
+    margin-left: 16px;
+}
+
+.firstLine{
+    height: 27px;
+}
+
+.name{
+    width: 54px;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 12px;
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.role{
+    background: #5fb8ff;
+    border-radius: 2px;
+    min-width: 51px;
+    height: 16px;
+    padding: 1px 9px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+}
+
+.endLine{
+    margin-top: 8px;
+    color: #697e8d;
+}
+
+.infoRight{
+    box-sizing: border-box;
+    height: 100%;
+    width: 75%;
+    float: right;
+    position: relative;
+}
+
+.change{
+    box-sizing: border-box;
+    display: block;
+    font-size: 12px;
+    color: #757575;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 2px;
+    width: 84px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
     right: 0;
-    top: 60px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.firstDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    z-index: 3;
+}
+
+.lastDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.leftDiv{
+    float: left;
+    list-style-type: none;
+}
+
+.leftDiv div{
+    position: relative;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.btn2,.btn2Check{
+    display: inline-block;
+    font-size: 14px;
+    width: 90px;
+    color: #0f9d58;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    margin-left: 5px;
+}
+
+.btn2:before{
+    content: " ";
+    border-radius: 72px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    background: rgba(0,0,0,.45) url("./img/gou.png") no-repeat 3px;
+}
+
+.btn2Check:before{
+    content: " ";
+    border-radius: 72px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    background: #0f9d58 url("./img/gou.png") no-repeat 3px;
+}
+
+.rightDiv{
+    float: right;
+}
+
+.modAccountConfirm{
+    box-sizing: border-box;
+    width: 82px;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #0f9d58;
+    border-radius: 2px;
+    background: #fff;
+    color: #0f9d58;
+    cursor: pointer;
+}
+
+.modAccountConfirm:first-child{
+    background: #0f9d58;
+    color: #fff;
+    margin-bottom: 10px;
 }

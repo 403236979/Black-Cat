@@ -21,7 +21,8 @@ class personalEdit extends Component {
             company_area:'',
             address:'',
             email:'',
-            phone:''
+            phone:'',
+            showIndex:3
         }
     }
 

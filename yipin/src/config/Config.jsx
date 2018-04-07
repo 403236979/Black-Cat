@@ -4,8 +4,7 @@ export const item=[
         imgSrc:require("imgPath/kanban.png"),
         imgAct:require("imgPath/kanbanactive.png"),
         child:[
-            "数据看板",
-            "新增项目"
+            "数据看板"
         ],
         link:"taskManagement",
         isActive:true,
@@ -21,24 +20,13 @@ export const item=[
         index:1
     },
     {
-        name:"人才管家",
-        imgSrc:require("imgPath/talenthub.png"),
-        imgAct:require("imgPath/talenthubactive.png"),
-        child:[
-            "上传简历"
-        ],
-        link:"talenthub",
-        isActive:false,
-        index:2
-    },
-    {
         name:"我的团队",
         imgSrc:require("imgPath/team.png"),
         imgAct:require("imgPath/teamactive.png"),
         child:[],
         link:"myTeam/membership",
         isActive:false,
-        index:3
+        index:2
     },
     {
         name:"个人中心",
@@ -47,6 +35,6 @@ export const item=[
         child:[],
         link:"personal/personalTakeList",
         isActive:false,
-        index:4
+        index:3
     }
 ];

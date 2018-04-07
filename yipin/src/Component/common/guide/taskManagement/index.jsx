@@ -17,9 +17,13 @@ class TaskManagement extends Component {
         return (
             <div id='Test'>
                 <GuideHeader/>
-                <LeftNav {...this.props} {...this.state}/>
-                <div className={style.contentBox}>
-                    taskManagement
+                <div className={style.box}>
+                    <LeftNav {...this.props} {...this.state}/>
+                    <div className={style.contentBox}>
+                        <div style={{background: 'rgb(255, 255, 255)',minHeight:window.screen.height-125 + "px"}}>
+                            taskManagement
+                        </div>
+                    </div>
                 </div>
             </div>
         )
