@@ -1,0 +1,26 @@
+.container{
+
+    display: inline-block;
+}
+
+.itemCon{
+
+
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.container .itemCon:last-child{
+
+    margin-right: 0px;
+}
+
+.itemCheckbox{
+
+    width: 25px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+
+    display: inline-block;
+}

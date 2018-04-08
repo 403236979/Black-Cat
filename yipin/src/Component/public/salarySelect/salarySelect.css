@@ -1,0 +1,13 @@
+.container{
+
+    display: inline-block;
+}
+.clear{
+    clear: both;
+}
+
+.join{
+    width:20px;
+    float: left;
+    text-align: center;
+}

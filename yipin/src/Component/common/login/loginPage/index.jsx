@@ -33,7 +33,7 @@ export default class LoginPage extends Component {
         if(typeof(password) === "undefined"||typeof(phone) === "undefined" || checkTelePhone(phone) == false || checkPassword(password) == false){
             return false;
         }else{
-            location.pathname = "/login/changeTeam";
+            this.props.history.push("/login/changeTeam");
         }
     };
 

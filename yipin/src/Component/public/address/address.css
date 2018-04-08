@@ -1,0 +1,11 @@
+.container{
+
+    display: inline-block;
+
+}
+
+.space{
+
+    display: inline-block;
+    width:10px;
+}

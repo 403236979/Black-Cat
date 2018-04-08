@@ -1,0 +1,106 @@
+
+.box{
+    position: relative;
+    width:100%;
+    margin-top: 80px;
+}
+
+.contentBox{
+    float: right;
+    width: calc(100% - 150px);
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.containerCenter{
+    position: relative;
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.addTask{
+    background: #fff;
+    box-shadow: 0 -1px 0 0 hsla(0,0%,88%,.01), 0 0 2px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.24);
+    width: 323px;
+    height: 288px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.addTaskTop{
+    width: 323px;
+    height: 110px;
+    background: hsla(0,0%,70%,.12);
+    position: relative;
+}
+
+.addTaskp1,.addTaskp2{
+    background-color: #e9e9e9;
+    height: 16px;
+    position: absolute;
+}
+
+.addTaskp1{
+    width: 200px;
+    top: 21px;
+    left: 62px;
+}
+
+.addTaskp2{
+    width: 168px;
+    left: 78px;
+    top: 47px;
+    }
+
+.addTaskp3{
+    background-color: #e9e9e9;
+    height: 16px;
+    width: 200px;
+    left: 62px;
+    top: 73px;
+    position: absolute;
+    }
+
+.addTaskp4,.addTaskp5{
+    position: absolute;
+    background-color: #f4f4f4;
+    height: 18px;
+    width: 283px;
+    left: 20px;
+
+}
+
+.addTaskp4{
+    top: 131px;
+}
+
+.addTaskp5{
+    top: 159px;
+}
+
+.addTaskp6{
+    position: absolute;
+    background-color: #f4f4f4;
+    height: 10px;
+    width: 84px;
+    left: 128px;
+    top: 257px;
+}
+
+.addTaskBtn{
+    position: absolute;
+    background-color: #0f9d58;
+    border-radius: 2px;
+    height: 32px;
+    width: 130px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    left: 97px;
+    top: 198px;
+    cursor: pointer;
+}

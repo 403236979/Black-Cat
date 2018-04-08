@@ -10,7 +10,11 @@ import Signup from '../Component/common/login/signup/signupPage/Index.jsx';
 import ChangeTeam from '../Component/common/login/changeTeam/Index.jsx';
 
 import FinishSignup from '../Component/common/login/signup/finishSignup/Index.jsx';
-import TaskManagement from '../Component/common/guide/taskManagement/Index.jsx';
+
+import TaskKanban from '../Component/common/guide/taskManagement/taskKanban/Index.jsx';
+import Step1 from '../Component/common/guide/taskManagement/step1/Index.jsx';
+import Step2 from '../Component/common/guide/taskManagement/step2/Index.jsx';
+import Step3 from '../Component/common/guide/taskManagement/step3/Index.jsx';
 
 import PersonalTakeList from '../Component/common/guide/personal/PersonalTakeList/Index.jsx';
 import PersonalEdit from '../Component/common/guide/personal/personalEdit/Index.jsx';
@@ -45,7 +49,7 @@ const RouteConfig =(
           </Route>
           <Route path='/guide'>
               <Switch>
-                  <Route path="/guide/taskManagement" component={TaskManagement} />
+                  <Route path="/guide/taskManagement/taskKanban" component={TaskKanban} />
                   <Route path="/guide/myTeam">
                       <switch>
                           <Route path="/guide/myTeam/membership"  component={Membership} />
@@ -59,8 +63,16 @@ const RouteConfig =(
                           <Route path="/guide/personal/personalEdit" component={PersonalEdit} />
                       </switch>
                   </Route>
+                  <Route path="/guide/taskManagement">
+                      <switch>
+                          <Route path="/guide/taskManagement/taskKanban" component={TaskKanban} />
+                          <Route path="/guide/taskManagement/step1" component={Step1} />
+                          <Route path="/guide/taskManagement/step2" component={Step2} />
+                          <Route path="/guide/taskManagement/step3" component={Step3} />
+                      </switch>
+                  </Route>
                   <Route path="/guide/talent" component={Talent} />
-                  <Redirect to="/guide/taskManagement" component={TaskManagement} />
+                  <Redirect to="/guide/taskManagement/taskKanban" component={TaskKanban} />
               </Switch>
           </Route>
           <Route path='/verify' component={Verify}/>

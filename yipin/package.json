@@ -22,12 +22,15 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "body-parser": "^1.17.1",
+    "bundle-loader": "^0.5.5",
     "deep-extend": "^0.4.1",
+    "es6-promise": "^4.2.4",
     "github-markdown-css": "^2.4.0",
     "immutable": "^3.8.1",
     "isomorphic-fetch": "^2.2.1",
     "normalize.css": "^4.1.1",
     "pure-render-decorator": "^1.2.1",
+    "rc-checkbox": "^2.0.3",
     "react": "^15.5.4",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
@@ -38,8 +41,7 @@
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0",
     "sass-loader": "^4.1.1",
-    "bundle-loader": "^0.5.5",
-    "rc-checkbox": "^2.0.3"
+    "whatwg-fetch": "^1.1.1"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
@@ -71,6 +73,7 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
+    "fetch-ie8": "^1.4.2",
     "webpack": "^1.13.0",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-dev-server": "^1.14.1",
